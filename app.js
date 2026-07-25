@@ -24,11 +24,22 @@
 
   function initSearchWorkers() {
     if (typeof Worker === 'undefined') return; // no Worker support — search panels degrade to empty, non-fatal
-    searchWorkers = Array.from({ length: SEARCH_POOL_SIZE }, (_, i) => {
-      const w = new Worker('./search-worker.js');
-      w.onmessage = (e) => handlePoolMessage(i, e);
-      return w;
-    });
+    try {
+      searchWorkers = Array.from({ length: SEARCH_POOL_SIZE }, (_, i) => {
+        const w = new Worker('./search-worker.js');
+        w.onmessage = (e) => handlePoolMessage(i, e);
+        w.onerror = (err) => handlePoolWorkerError(i, err);
+        return w;
+      });
+    } catch (err) {
+      // A Worker() constructor failure here (restrictive CSP, resource limits,
+      // some embedded-webview quirk) must never take the rest of app.js down
+      // with it — this call runs before everything else in the file, so an
+      // uncaught throw here would silently break the whole app, not just
+      // search. Degrade the same way "no Worker support" already does.
+      console.warn('TEP: failed to start search workers, search will be unavailable:', err);
+      searchWorkers = [];
+    }
   }
   initSearchWorkers();
 
@@ -1135,7 +1146,6 @@
     if (msg.type !== 'search-result') return;
     if (!poolPending || msg.reqId !== poolPending.reqId) return; // stale — a newer request has since superseded this
 
-    poolPending.remaining--;
     if (msg.bible.total > 0 || workerIndex === 0) poolPending.bible = msg.bible;
     poolPending.sourceTotal += msg.source.total;
     poolPending.sourceParts.push(msg.source.top);
@@ -1144,7 +1154,23 @@
       poolPending.maxSourceMs = Math.max(poolPending.maxSourceMs, msg.timing.sourceMs);
       Object.assign(poolPending.perSourceMs, msg.timing.perSourceMs);
     }
+    settlePoolReply();
+  }
 
+  // A worker that throws (a bad Fuse.js edge case, an out-of-memory hiccup,
+  // whatever) must still count toward completion — otherwise `remaining`
+  // never reaches 0, searchInFlight is stuck true forever, and every search
+  // after that point just queues up behind it and never fires again. Losing
+  // that one worker's shard of results for this query is an acceptable
+  // trade for "search still works at all."
+  function handlePoolWorkerError(workerIndex, err) {
+    console.warn(`TEP: search worker ${workerIndex} errored:`, err && err.message ? err.message : err);
+    if (!poolPending) return; // no search currently in flight — nothing to unstick
+    settlePoolReply();
+  }
+
+  function settlePoolReply() {
+    poolPending.remaining--;
     if (poolPending.remaining > 0) return; // still waiting on the rest of the pool
 
     const merged = poolPending;
@@ -2691,6 +2717,12 @@
 
   async function uninstallTradition(tradition) {
     const ids = SOURCE_TEXTS.filter(s => s.tradition === tradition).map(s => s.id);
+    // Flip status and re-render immediately, before the async delete
+    // resolves — otherwise the "Remove from device" button stays live
+    // during the await and a second click re-enters this function for the
+    // same tradition (harmless, since the delete is idempotent, but wasteful).
+    ids.forEach(id => { sourceStatus[id] = 'removing'; });
+    renderSourceStatusPanel();
     await deleteSourceRowsForIds(ids);
     ids.forEach(id => { sourceStatus[id] = 'missing'; delete sourceDiagnostics[id]; });
     await setTraditionOverride(tradition, false);
@@ -2717,10 +2749,13 @@
       const statuses = sources.map(s => sourceStatus[s.id] || 'missing');
       const readyCount = statuses.filter(st => st === 'ready').length;
       const anyLoading = statuses.includes('loading');
+      const anyRemoving = statuses.includes('removing');
       const allReady = readyCount === sources.length;
 
       let dotClass, summary;
-      if (anyLoading) {
+      if (anyRemoving) {
+        dotClass = 'downloading'; summary = 'Removing…';
+      } else if (anyLoading) {
         dotClass = 'downloading'; summary = 'Downloading…';
       } else if (allReady) {
         dotClass = 'ready'; summary = `Downloaded — ${readyCount} text${readyCount === 1 ? '' : 's'} searchable offline`;
@@ -2733,7 +2768,7 @@
       const bytes = sources.reduce((sum, s) => sum + (sourceByteSize[s.id] || 0), 0);
       const sizeLabel = bytes > 0 ? ` (${formatBytes(bytes)} on device)` : '';
 
-      const actionBtn = anyLoading ? ''
+      const actionBtn = (anyLoading || anyRemoving) ? ''
         : allReady
           ? `<button class="contact-btn source-action-btn" data-action="uninstall" data-tradition="${escapeHtml(tradition)}">Remove from device</button>`
           : `<button class="submit-btn source-action-btn" data-action="install" data-tradition="${escapeHtml(tradition)}">Download</button>`;
@@ -2742,7 +2777,7 @@
 
       const filesDetail = sources.map(s => {
         const st = sourceStatus[s.id] || 'missing';
-        const label = st === 'ready' ? 'Loaded' : st === 'loading' ? 'Downloading…' : st === 'failed' ? 'Unavailable' : 'Not downloaded';
+        const label = st === 'ready' ? 'Loaded' : st === 'loading' ? 'Downloading…' : st === 'removing' ? 'Removing…' : st === 'failed' ? 'Unavailable' : 'Not downloaded';
         const attempts = sourceDiagnostics[s.id] || [];
         const diag = attempts.length
           ? `<div class="source-diag">${attempts.map(a => `
