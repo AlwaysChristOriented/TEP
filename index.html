@@ -86,6 +86,12 @@
   .sidebar-list::-webkit-scrollbar{width:6px;}
   .sidebar-list::-webkit-scrollbar-track{background:var(--parchment-dim);border-radius:3px;}
   .sidebar-list::-webkit-scrollbar-thumb{background:var(--ink-soft);border-radius:3px;}
+  .sidebar-group{display:flex;flex-direction:column;gap:6px;}
+  .sidebar-group-label{
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:0.07em;color:var(--ink-soft);opacity:0.7;
+    margin:4px 0 2px 2px;
+  }
 
   .side-chip{
     text-align:left;width:100%;
@@ -566,18 +572,43 @@
     <input id="religion-search" type="text" class="sidebar-search" placeholder="Search traditions…" autocomplete="off">
     <div class="sidebar-list" id="chips">
       <button class="side-chip active" data-filter="all">All</button>
-      <button class="side-chip" data-filter="Catholicism">Catholicism</button>
-      <button class="side-chip" data-filter="Apocrypha">Apocrypha</button>
-      <button class="side-chip" data-filter="Islam">Islam</button>
-      <button class="side-chip" data-filter="Jehovah's Witnesses">Jehovah's Witnesses</button>
-      <button class="side-chip" data-filter="Mormonism">Mormonism (LDS)</button>
-      <button class="side-chip" data-filter="Hinduism">Hinduism</button>
-      <button class="side-chip" data-filter="Buddhism">Buddhism</button>
-      <button class="side-chip" data-filter="Atheism">Atheism</button>
-      <button class="side-chip" data-filter="Pluralism">Pluralism</button>
-      <button class="side-chip" data-filter="Humanism">Humanism</button>
-      <button class="side-chip" data-filter="Luciferianism">Luciferianism</button>
-      <button class="side-chip" data-filter="Freemasonry">Freemasonry</button>
+      <div class="sidebar-group" data-group="religions">
+        <div class="sidebar-group-label">Religions</div>
+        <button class="side-chip" data-filter="Catholicism">Catholicism</button>
+        <button class="side-chip" data-filter="Apocrypha">Apocrypha</button>
+        <button class="side-chip" data-filter="Islam">Islam</button>
+        <button class="side-chip" data-filter="Jehovah's Witnesses">Jehovah's Witnesses</button>
+        <button class="side-chip" data-filter="Mormonism">Mormonism (LDS)</button>
+        <button class="side-chip" data-filter="Hinduism">Hinduism</button>
+        <button class="side-chip" data-filter="Buddhism">Buddhism</button>
+        <button class="side-chip" data-filter="Zoroastrianism">Zoroastrianism</button>
+        <button class="side-chip" data-filter="Theosophy">Theosophy</button>
+        <button class="side-chip" data-filter="Thelema">Thelema</button>
+        <button class="side-chip" data-filter="Gnosticism">Gnosticism</button>
+        <button class="side-chip" data-filter="Santeria">Santería</button>
+        <button class="side-chip" data-filter="Yoruba Religion">Yoruba Religion</button>
+        <button class="side-chip" data-filter="Vodou">Vodou</button>
+        <button class="side-chip" data-filter="Atheism">Atheism</button>
+        <button class="side-chip" data-filter="Pluralism">Pluralism</button>
+        <button class="side-chip" data-filter="Humanism">Humanism</button>
+      </div>
+      <div class="sidebar-group" data-group="egyptian-occultism">
+        <div class="sidebar-group-label">Egyptian Occultism</div>
+        <button class="side-chip" data-filter="Egyptian Occultism">Egyptian Occultism</button>
+      </div>
+      <div class="sidebar-group" data-group="cults">
+        <div class="sidebar-group-label">Cults / Sects</div>
+        <button class="side-chip" data-filter="Luciferianism">Luciferianism</button>
+        <button class="side-chip" data-filter="Freemasonry">Freemasonry</button>
+        <button class="side-chip" data-filter="Skull and Bones">Skull and Bones</button>
+        <button class="side-chip" data-filter="LaVeyan Satanism">LaVeyan Satanism</button>
+        <button class="side-chip" data-filter="Temple of Set">Temple of Set</button>
+        <button class="side-chip" data-filter="Theistic Satanism">Theistic Satanism</button>
+      </div>
+      <div class="sidebar-group" data-group="too-evil">
+        <div class="sidebar-group-label">Too Evil</div>
+        <button class="side-chip" data-filter="Order of Nine Angles">Order of Nine Angles</button>
+      </div>
     </div>
     <p class="sidebar-empty" id="sidebar-empty" style="display:none;">No traditions match.</p>
     <select id="text-filter" class="sidebar-search" style="display:none;"></select>

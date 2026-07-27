@@ -463,6 +463,679 @@
       ]
     },
     {
+      claim: "The universe is not a separate creation but a mental image existing within the Mind of THE ALL",
+      religion: "Gnosticism",
+      keywords: ["hermetic principle of mentalism", "the all is mind", "the universe is mental", "kybalion mentalism"],
+      sourceQuote: { ref: "The Kybalion, Ch. 2, para. 6", text: "\"THE ALL IS MIND; The Universe is Mental.\"--The Kybalion." },
+      note: "The Kybalion's first Hermetic Principle, Mentalism, holds that the physical universe has no independent existence apart from THE ALL's mind — it is a mental creation, closer to a thought or dream than to a separate, freestanding work of craftsmanship.",
+      verses: [
+        { ref: "Genesis 1:1", text: "In the beginning God created the heaven and the earth." },
+        { ref: "Hebrews 11:3", text: "Through faith we understand that the worlds were framed by the word of God, so that things which are seen were not made of things which do appear." }
+      ]
+    },
+    {
+      claim: "Good and evil are not opposites but two poles of the same thing, differing only in degree",
+      religion: "Gnosticism",
+      keywords: ["hermetic principle of polarity", "good and evil same thing", "opposites reconciled kybalion", "polarity good evil"],
+      sourceQuote: { ref: "The Kybalion, Ch. 2, para. 16", text: "\"Good and Evil\" are but the poles of the same thing, and the Hermetist understands the art of transmuting Evil into Good, by means of an application of the Principle of Polarity." },
+      note: "The Principle of Polarity treats moral opposites the same way it treats heat and cold — as varying degrees of a single underlying reality that can be shifted along a scale, rather than as a fixed, categorical distinction.",
+      verses: [
+        { ref: "Isaiah 5:20", text: "Woe unto them that call evil good, and good evil; that put darkness for light, and light for darkness; that put bitter for sweet, and sweet for bitter!" },
+        { ref: "1 John 1:5", text: "This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all." }
+      ]
+    },
+    {
+      claim: "\"As above, so below\": the same laws govern the spiritual, mental, and physical planes alike",
+      religion: "Gnosticism",
+      keywords: ["as above so below", "hermetic principle of correspondence", "kybalion planes of correspondence"],
+      sourceQuote: { ref: "The Kybalion, Ch. 2, para. 9", text: "\"As above, so below; as below, so above.\"--The Kybalion." },
+      note: "The Principle of Correspondence lets a Hermetist reason directly from earthly, knowable patterns to divine, unknowable ones, treating Creator and creation as different degrees of the same continuous scale rather than as fundamentally distinct kinds of being.",
+      verses: [
+        { ref: "Isaiah 55:8-9", text: "For my thoughts are not your thoughts, neither are your ways my ways, saith the LORD. For as the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts." },
+        { ref: "Numbers 23:19", text: "God is not a man, that he should lie; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?" }
+      ]
+    },
+    {
+      claim: "Masculine and feminine principles pervade all things, mentally and physically, on every plane of existence",
+      religion: "Gnosticism",
+      keywords: ["hermetic principle of gender", "mental gender kybalion", "masculine feminine principle everything"],
+      sourceQuote: { ref: "The Kybalion, Ch. 13, para. 1", text: "\"Gender is in everything; everything has its Masculine and Feminine Principles; Gender manifests on all planes.\"--The Kybalion." },
+      note: "Where the Kybalion universalizes gender into an abstract creative force running through all matter, mind, and energy — inanimate objects included — Genesis ties male and female to the deliberate creation of humankind specifically, in God's own image.",
+      verses: [
+        { ref: "Genesis 1:27", text: "So God created man in his own image, in the image of God created he him; male and female created he them." },
+        { ref: "Genesis 5:2", text: "Male and female created he them; and blessed them, and called their name Adam, in the day when they were created." }
+      ]
+    },
+    {
+      claim: "The world was created through an impersonal alchemical process, not by a spoken divine command",
+      religion: "Gnosticism",
+      keywords: ["emerald tablet creation", "so was the world created", "hermetic cosmogony", "alchemical creation of the world"],
+      sourceQuote: { ref: "Emerald Tablet, v. 12", text: "So was the world created." },
+      note: "This line closes a description of an impersonal operation — separating earth from fire, ascending and descending, receiving \"the force of things superior and inferior\" — presented as the very mechanism by which the world came to be, rather than the result of a personal being's decree.",
+      verses: [
+        { ref: "Genesis 1:3", text: "And God said, Let there be light: and there was light." },
+        { ref: "Psalm 33:9", text: "For he spake, and it was done; he commanded, and it stood fast." }
+      ]
+    },
+    {
+      claim: "The Sun and Moon are the literal father and mother of the primordial substance from which the cosmos unfolds",
+      religion: "Gnosticism",
+      keywords: ["sun father moon mother hermetic", "emerald tablet sun moon", "hermetic celestial parentage"],
+      sourceQuote: { ref: "Emerald Tablet, v. 4-5", text: "The Sun is its father, the Moon its mother, the wind hath carried it in its belly, the earth its nurse." },
+      note: "The Tablet frames Sun and Moon not merely as luminaries but as literal progenitors in a genealogy — father and mother — of the substance from which all else descends.",
+      verses: [
+        { ref: "Genesis 1:16", text: "And God made two great lights; the greater light to rule the day, and the lesser light to rule the night: he made the stars also." },
+        { ref: "Genesis 1:14", text: "And God said, Let there be lights in the firmament of the heaven to divide the day from the night; and let them be for signs, and for seasons, and for days, and years:" }
+      ]
+    },
+    {
+      claim: "Glory and deliverance from all obscurity come through mastering a hidden technique, not through grace",
+      religion: "Gnosticism",
+      keywords: ["emerald tablet glory obscurity", "hermetic gnosis technique salvation", "by this means glory of the world"],
+      sourceQuote: { ref: "Emerald Tablet, v. 10", text: "By this means you shall have the glory of the whole world, and thereby all obscurity shall fly from you." },
+      note: "The \"means\" in view is the operation the Tablet has just described — glory and the banishing of darkness are the payoff of correctly applying a technique, available to whoever masters the method, rather than something given.",
+      verses: [
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." },
+        { ref: "2 Corinthians 4:6", text: "For God, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of God in the face of Jesus Christ." }
+      ]
+    },
+    {
+      claim: "Hermes Trismegistus claims personal possession of the complete threefold philosophy of the whole world",
+      religion: "Gnosticism",
+      keywords: ["hermes trismegistus three parts wisdom", "emerald tablet thrice great", "hermetic claim to total wisdom"],
+      sourceQuote: { ref: "Emerald Tablet, v. 14", text: "Hence I am called Hermes Trismegistus, having the three parts of the philosophy of the whole world." },
+      note: "The Tablet ends with its speaker naming himself \"Thrice-Great\" precisely because he holds all three parts of the world's philosophy — a claim to total, self-attained mastery of cosmic wisdom.",
+      verses: [
+        { ref: "1 Corinthians 3:19", text: "For the wisdom of this world is foolishness with God. For it is written, He taketh the wise in their own craftiness." },
+        { ref: "Proverbs 3:5-7", text: "Trust in the LORD with all thine heart; and lean not unto thine own understanding... Be not wise in thine own eyes." }
+      ]
+    },
+    {
+      claim: "Fire is venerated in worship as the son of Ahura Mazda, offered sacrifice and praise",
+      religion: "Zoroastrianism",
+      keywords: ["zoroastrian fire worship", "fire son of ahura mazda", "yasna fire hymn", "zoroastrianism sacred fire"],
+      sourceQuote: { ref: "Yasna 0.2", text: "To Fire, the son of Ahura Mazda. To you, O Fire, son of Ahura Mazda. With propitiation, for worship, adoration, propitiation, and praise." },
+      note: "The Yasna repeatedly addresses Fire directly as an object of worship and praise in its own right (see also Yasna 36, \"To Ahura and the Fire\"), not merely as a symbol used within worship of Ahura Mazda.",
+      verses: [
+        { ref: "Exodus 3:2-5", text: "And the angel of the LORD appeared unto him in a flame of fire out of the midst of a bush... And he said, Draw not nigh hither: put off thy shoes from off thy feet, for the place whereon thou standest is holy ground." },
+        { ref: "Deuteronomy 4:24", text: "For the LORD thy God is a consuming fire, even a jealous God." }
+      ]
+    },
+    {
+      claim: "Guardian spirits (Fravashis) of the righteous have existed from eternity past and are invoked in worship",
+      religion: "Zoroastrianism",
+      keywords: ["fravashi zoroastrian", "guardian spirits existed from of old", "yasna fravashis", "pre-existent souls zoroastrianism"],
+      sourceQuote: { ref: "Yasna 23.1", text: "I desire to approach with my praise those Fravashis which have existed from of old, the Fravashis of the houses, and of the villages, of the communities, and of the provinces..." },
+      note: "Fravashis are held to have existed \"from of old\" — before the persons they belong to were even born — and are the object of dedicated praise and sacrifice (Yasna 23, 26), rather than beings created at conception.",
+      verses: [
+        { ref: "Psalm 139:13", text: "For thou hast possessed my reins: thou hast covered me in my mother's womb." },
+        { ref: "Hebrews 9:27", text: "And as it is appointed unto men once to die, but after this the judgment:" }
+      ]
+    },
+    {
+      claim: "Worship includes actively cursing and 'smiting' a rival evil spirit, Angra Mainyu, alongside praising Ahura Mazda",
+      religion: "Zoroastrianism",
+      keywords: ["angra mainyu zoroastrian dualism", "smite the wicked spirit", "yasna cosmic dualism", "ahriman opposing god"],
+      sourceQuote: { ref: "Yasna 27.1", text: "This is to render Him who is of all the greatest, our lord and master (even) Ahura Mazda. And this to smite the wicked Angra Mainyu, and to smite Aeshma of the bloody spear, and the Mazainya Daevas..." },
+      note: "The liturgy pairs praise of Ahura Mazda with a formal act of \"smiting\" his opposite, Angra Mainyu, framing the two as opposing forces addressed together in the same breath of worship.",
+      verses: [
+        { ref: "Job 1:6-12", text: "Now there was a day when the sons of God came to present themselves before the LORD, and Satan came also among them... And the LORD said unto Satan, Behold, all that he hath is in thy power; only upon himself put not forth thine hand." },
+        { ref: "Colossians 2:15", text: "And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it." }
+      ]
+    },
+    {
+      claim: "Good thoughts, good words, and good deeds, professed and accepted by the worshipper, constitute the substance of righteousness",
+      religion: "Zoroastrianism",
+      keywords: ["good thoughts good words good deeds", "zoroastrian ethical formula", "yasna righteousness", "zoroastrianism self-professed righteousness"],
+      sourceQuote: { ref: "Yasna 0.4", text: "I praise good thoughts, good words, and good deeds and those that are to be thought, spoken, and done. I do accept all good thoughts, good words, and good deeds. I do renounce all evil thoughts, evil words, and evil deeds." },
+      note: "Righteousness here is entered into by the worshipper's own profession and resolve — praising and accepting good thoughts, words, and deeds while renouncing evil ones — rather than received as something given from outside the self.",
+      verses: [
+        { ref: "Jeremiah 17:9", text: "The heart is deceitful above all things, and desperately wicked: who can know it?" },
+        { ref: "Isaiah 64:6", text: "But we are all as an unclean thing, and all our righteousnesses are as filthy rags; and we all do fade as a leaf; and our iniquities, like the wind, have taken us away." }
+      ]
+    },
+    {
+      claim: "Initiation includes a mock death-and-rebirth ceremony, reportedly involving a coffin",
+      religion: "Skull and Bones",
+      keywords: ["skull and bones initiation", "skull and bones coffin ritual", "yale secret society death rebirth", "order 322 initiation"],
+      positionSummary: "According to a widely-cited 1876 account by a rival Yale society that broke into the group's hall, initiates undergo a ceremony symbolizing death and rebirth into the order, reportedly involving lying in a coffin. Skull and Bones itself has never confirmed or denied specific initiation practices, maintaining strict secrecy.",
+      verses: [
+        { ref: "Romans 6:3-4", text: "Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life." }
+      ]
+    },
+    {
+      claim: "A human skull is reportedly present during initiation as a memento mori symbol of mortality",
+      religion: "Skull and Bones",
+      keywords: ["skull and bones human skull ritual", "memento mori secret society", "order 322 skull symbol"],
+      positionSummary: "The same 1876 account describes a human skull displayed during initiation rites, understood as a memento mori — a reminder of mortality meant to impress initiates with the gravity of their new obligations.",
+      verses: [
+        { ref: "Hebrews 9:27", text: "And as it is appointed unto men once to die, but after this the judgment:" },
+        { ref: "Ecclesiastes 9:5", text: "For the living know that they shall die: but the dead know not any thing, neither have they any more a reward; for the memory of them is forgotten." }
+      ]
+    },
+    {
+      claim: "Initiates swear an oath of absolute, lifelong secrecy about the society's activities and membership",
+      religion: "Skull and Bones",
+      keywords: ["skull and bones secrecy oath", "yale secret society silence", "order 322 lifetime oath"],
+      positionSummary: "Members are bound by a lifelong vow never to discuss the society's rites, symbols, or internal affairs with outsiders — a secrecy that extends even to acknowledging basic facts about meetings or membership.",
+      verses: [
+        { ref: "Luke 8:17", text: "For nothing is secret, that shall not be made manifest; neither any thing hid, that shall not be known and come abroad." },
+        { ref: "John 18:20", text: "Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing." }
+      ]
+    },
+    {
+      claim: "Members form a lifelong network of mutual loyalty and advancement among a small elite",
+      religion: "Skull and Bones",
+      keywords: ["skull and bones elite network", "bonesmen loyalty", "old boy network yale secret society"],
+      positionSummary: "Fifteen new members (\"the Fifteen\") are elected into the order each year, joining a lifelong network in which members are expected to give one another preference and support in business, politics, and other advancement.",
+      verses: [
+        { ref: "James 2:1", text: "My brethren, have not the faith of our Lord Jesus Christ, the Lord of glory, with respect of persons." },
+        { ref: "Ephesians 5:11", text: "And have no fellowship with the unfruitful works of darkness, but rather reprove them." }
+      ]
+    },
+    {
+      claim: "God is not a personal Creator but an impersonal, unknowable Absolute Principle",
+      religion: "Theosophy",
+      keywords: ["theosophy impersonal god", "universal divine principle theosophy", "theosophy reject personal god", "blavatsky absolute"],
+      sourceQuote: { ref: "The Key to Theosophy, Section 5", text: "In such a God we do not believe. We reject the idea of a personal, or an extra-cosmic and anthropomorphic God, who is but the gigantic shadow of man... We believe in a Universal Divine Principle, the root of ALL, from which all proceeds." },
+      note: "Theosophy explicitly rejects the Biblical God of Moses as \"anthropomorphic\", substituting an impersonal Absolute that cannot be addressed, known, or related to as a person.",
+      verses: [
+        { ref: "Exodus 3:14", text: "And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you." },
+        { ref: "Genesis 1:1", text: "In the beginning God created the heaven and the earth." }
+      ]
+    },
+    {
+      claim: "Karma, an impersonal law of retributive justice, governs moral consequence — not forgiveness or atonement",
+      religion: "Theosophy",
+      keywords: ["theosophy karma law of retribution", "karma replaces forgiveness", "theosophical doctrine of karma"],
+      sourceQuote: { ref: "The Key to Theosophy, Section 11", text: "Karma, the universal law of retributive justice." },
+      note: "Every deed and even every sinful thought is repaid by impersonal law rather than forgiven — Theosophy explicitly rejects the Christian doctrine of atonement in favor of this self-executing moral bookkeeping.",
+      verses: [
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." },
+        { ref: "Psalm 103:10", text: "He hath not dealt with us after our sins; nor rewarded us according to our iniquities." }
+      ]
+    },
+    {
+      claim: "The soul reincarnates through a long series of lives, strung together like pearls on a thread",
+      religion: "Theosophy",
+      keywords: ["theosophy reincarnation", "sutratma thread soul", "theosophical rebirth doctrine"],
+      sourceQuote: { ref: "The Key to Theosophy, Section 9", text: "That which undergoes periodical incarnation is the Sutratma, which means literally the \"Thread Soul\"... because, like the pearls on a thread, so is the long series of human lives strung together on that one thread." },
+      verses: [
+        { ref: "Hebrews 9:27", text: "And as it is appointed unto men once to die, but after this the judgment:" }
+      ]
+    },
+    {
+      claim: "Prayer is replaced by \"Will-Prayer\" — an internal command of the will, not a petition addressed to God",
+      religion: "Theosophy",
+      keywords: ["theosophy will-prayer", "theosophy rejects prayer", "internal command instead of petition"],
+      sourceQuote: { ref: "The Key to Theosophy, Section 5", text: "We do not [pray]. We act, instead of talking... we call it WILL-PRAYER, and it is rather an internal command than a petition." },
+      note: "Rather than petitioning a personal God, the Theosophist directs an act of will inward, toward the esoteric \"Father which is in secret\" understood as an aspect of self rather than an addressable divine Person.",
+      verses: [
+        { ref: "Philippians 4:6", text: "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God." },
+        { ref: "Matthew 7:7", text: "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:" }
+      ]
+    },
+    {
+      claim: "\"Do what thou wilt shall be the whole of the Law\" — one's own will is the supreme moral principle",
+      religion: "Thelema",
+      keywords: ["do what thou wilt", "thelema law of will", "book of the law thelema ethics", "love is the law love under will"],
+      sourceQuote: { ref: "The Book of the Law, I:40", text: "Do what thou wilt shall be the whole of the Law." },
+      note: "This axiom, repeated throughout the text (III:60) and in its closing Comment, makes the individual's own will the highest and only law — there is, in its own words, \"no law beyond Do what thou wilt.\"",
+      verses: [
+        { ref: "Matthew 26:39", text: "And he went a little farther, and fell on his face, and prayed, saying, O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt." },
+        { ref: "James 4:7", text: "Submit yourselves therefore to God. Resist the devil, and he will flee from you." }
+      ]
+    },
+    {
+      claim: "\"Every man and every woman is a star\" — each person is a unique, self-sufficient point of divine will",
+      religion: "Thelema",
+      keywords: ["every man and every woman is a star", "thelema divine individualism", "book of the law self divinity"],
+      sourceQuote: { ref: "The Book of the Law, I:3", text: "Every man and every woman is a star." },
+      note: "The declaration places each individual's own nature at the center of the cosmos, radically distinct from a view in which humanity is creaturely and finite before its Creator.",
+      verses: [
+        { ref: "Psalm 8:3-4", text: "When I consider thy heavens, the work of thy fingers, the moon and the stars, which thou hast ordained; What is man, that thou art mindful of him?" }
+      ]
+    },
+    {
+      claim: "Compassion for the weak is condemned as a vice; the strong are told to \"stamp down the wretched and the weak\"",
+      religion: "Thelema",
+      keywords: ["compassion is the vice of kings", "thelema rejects pity", "book of the law stamp down the weak"],
+      sourceQuote: { ref: "The Book of the Law, II:21", text: "We have nothing with the outcast and the unfit: let them die in their misery. For they feel not. Compassion is the vice of kings: stamp down the wretched & the weak: this is the law of the strong: this is our law and the joy of the world." },
+      verses: [
+        { ref: "James 1:27", text: "Pure religion and undefiled before God and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world." },
+        { ref: "Matthew 25:40", text: "And the King shall answer and say unto them, Verily I say unto you, Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me." }
+      ]
+    },
+    {
+      claim: "The text's speaker declares itself the only God: \"there is no other God than me\"",
+      religion: "Thelema",
+      keywords: ["there is no other god than me", "book of the law nuit hadit", "thelema exclusive deity claim"],
+      sourceQuote: { ref: "The Book of the Law, I:21", text: "With the God & the Adorer I am nothing: they do not see me. They are as upon the earth; I am Heaven, and there is no other God than me, and my lord Hadit." },
+      verses: [
+        { ref: "Isaiah 45:5", text: "I am the LORD, and there is none else, there is no God beside me: I girded thee, though thou hast not known me:" }
+      ]
+    },
+    {
+      claim: "The material world was not made by the true God but by Ialdabaoth, a lesser, ignorant ruler born when the fallen aeon Sophia's light was swallowed into the Chaos",
+      religion: "Gnosticism",
+      keywords: ["ialdabaoth demiurge gnostic", "sophia fall into chaos", "gnosticism matter is evil"],
+      sourceQuote: { ref: "Pistis Sophia (Horner, 1924), First Document", text: "The great power of light of face of lion swallowed down the powers of light in the Sophia, and it purged her light she having swallowed it, and her matter was cast out unto the Chaos. It became a Ruler of face of lion in the Chaos, whose one half became fire and whose other half became darkness, namely, Ialdabaoth." },
+      verses: [
+        { ref: "Genesis 1:31", text: "And God saw every thing that he had made, and, behold, it was very good. And the evening and the morning were the sixth day." },
+        { ref: "John 1:3", text: "All things were made by him; and without him was not any thing made that was made." }
+      ]
+    },
+    {
+      claim: "Jesus stripped the Rulers of the Aeons of their power over Fate, astrology, and magic, so they can no longer control human destiny",
+      religion: "Gnosticism",
+      keywords: ["gnostic archons rulers of fate", "pistis sophia destiny astrology", "gnosticism rulers of the aeons"],
+      sourceQuote: { ref: "Pistis Sophia (Horner, 1924), First Document", text: "I took away the third part from the power of the Rulers of all the Aeons; and... removed their Destiny with their Spheres... in order that they should not be able to prevail any more from this hour to accomplish their unlawful works, because that thou tookest away their power from them." },
+      verses: [
+        { ref: "Colossians 2:15", text: "And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it." },
+        { ref: "Isaiah 45:7", text: "I form the light, and create darkness: I make peace, and create evil: I the LORD do all these things." }
+      ]
+    },
+    {
+      claim: "Salvation comes through secret mysteries and hidden knowledge (gnosis) that Jesus reveals only to an inner circle of disciples, not through faith alone",
+      religion: "Gnosticism",
+      keywords: ["gnosis secret knowledge salvation", "pistis sophia mysteries revealed", "gnosticism esoteric salvation"],
+      sourceQuote: { ref: "Pistis Sophia (Horner, 1924), First Document", text: "Ye are happy ones beyond every man who is upon the earth, because I revealed unto you these mysteries. Verily verily I say to you, I shall complete you with every Pleroma from the mysteries of the inward part even unto the mysteries of the outward part; and I shall fill you with the spirit, that they should call you the spiritual ones, completed with every Pleroma." },
+      verses: [
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." },
+        { ref: "1 Corinthians 15:3-4", text: "For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures:" }
+      ]
+    },
+    {
+      claim: "After his resurrection, Jesus spent eleven years secretly teaching his disciples esoteric mysteries far beyond anything recorded in the public Gospels",
+      religion: "Gnosticism",
+      keywords: ["jesus eleven years secret teaching", "pistis sophia post resurrection", "gnostic hidden gospel"],
+      sourceQuote: { ref: "Pistis Sophia (Horner, 1924), First Document", text: "It happened after that Jesus rose out of those who are dead, and he spent eleven years speaking with his disciples, and teaching them only as far as the Places of the First precept, and as far as the Places of the First Mystery." },
+      verses: [
+        { ref: "Acts 1:3", text: "To whom also he shewed himself alive after his passion by many infallible proofs, being seen of them forty days, and speaking of the things pertaining to the kingdom of God:" },
+        { ref: "2 Peter 1:16", text: "For we have not followed cunningly devised fables, when we made known unto you the power and coming of our Lord Jesus Christ, but were eyewitnesses of his majesty." }
+      ]
+    },
+    {
+      claim: "Salvation is reached by learning and knowing one's own inner divine nature — \"the man who hath Mind in him, let him learn to know that he himself is deathless\"",
+      religion: "Gnosticism",
+      keywords: ["corpus hermeticum know thyself deathless", "gnosis self knowledge salvation", "hermetic man is deathless"],
+      sourceQuote: { ref: "Corpus Hermeticum (Mead, 1906), Libellus I, 21", text: "If then thou learnest that thou art thyself of Life and Light, and that thou happen'st to be out of them, thou shalt return again to Life... The man who hath Mind in him, let him learn to know that he himself is deathless." },
+      verses: [
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." },
+        { ref: "John 14:6", text: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me." }
+      ]
+    },
+    {
+      claim: "The highest goal of those who attain gnosis is to be made one with God — becoming Powers who are themselves in God",
+      religion: "Gnosticism",
+      keywords: ["corpus hermeticum made one with god", "gnosis deification", "hermetic union with god"],
+      sourceQuote: { ref: "Corpus Hermeticum (Mead, 1906), Libellus I, 26", text: "This the good end for those who have gained Gnosis - to be made one with God." },
+      verses: [
+        { ref: "Isaiah 42:8", text: "I am the LORD: that is my name: and my glory will I not give to another, neither my praise to graven images." },
+        { ref: "Numbers 23:19", text: "God is not a man, that he should lie; neither the son of man, that he should repent." }
+      ]
+    },
+    {
+      claim: "A soul that lives in vice is reborn into lower creatures — reincarnating downward through animal forms rather than facing a single final judgment",
+      religion: "Gnosticism",
+      keywords: ["corpus hermeticum reincarnation soul", "hermetic transmigration souls", "gnosticism soul reborn animal"],
+      sourceQuote: { ref: "Corpus Hermeticum (Mead, 1906), Libellus X, 8", text: "If a soul on entering the body of a man persisteth in its vice, it neither tasteth deathlessness nor shareth in the Good; but speeding back again it turns into the path that leads to creeping things. This is the sentence of the vicious soul." },
+      verses: [
+        { ref: "Hebrews 9:27", text: "And as it is appointed unto men once to die, but after this the judgment:" }
+      ]
+    },
+    {
+      claim: "A secret magic book written by the god Thoth's own hand grants power to enchant heaven, earth, and the sea, and to understand the speech of animals — but taking it brings ruin on whoever possesses it",
+      religion: "Gnosticism",
+      keywords: ["book of thoth magic secret power", "setna magic book thoth", "egyptian book of thoth curse"],
+      sourceQuote: { ref: "Setna and the Magic Book (Petrie, 1895), para. 1", text: "He heard that the magic book of Thoth, by which a man may enchant heaven and earth, and know the language of all birds and beasts, was buried in the cemetery of Memphis." },
+      note: "An ancient Egyptian tale (not itself the book's contents, which are not preserved) about Prince Setna's quest for the legendary Book of Thoth — Ahura, guarding the tomb, warns him: \"Do not take this book; for it will bring trouble on you, as it has upon us.\"",
+      verses: [
+        { ref: "James 1:5", text: "If any man of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him." },
+        { ref: "Deuteronomy 18:10-12", text: "There shall not be found among you any one that... useth divination, or an observer of times, or an enchanter... For all that do these things are an abomination unto the LORD." }
+      ]
+    },
+    {
+      claim: "The gods themselves declare the dead king their own divine son and heir, enthroned beside them, by the power of ritual proclamation alone",
+      religion: "Egyptian Occultism",
+      keywords: ["pyramid texts divine sonship king", "nut geb declare king son", "egyptian occultism king becomes god"],
+      sourceQuote: { ref: "The Pyramid Texts (Mercer, 1952), Utterance 1", text: "To say by Nut, the brilliant, the great: This is (my) son, (my) first born, N., opener of (my) womb... this is (my) beloved, with whom I have been satisfied." },
+      note: "The oldest religious texts in the world (Old Kingdom, c. 2400-2300 BC), carved into pyramid walls to secure the dead king's ascension and divine sonship by ritual declaration.",
+      verses: [
+        { ref: "John 1:12-13", text: "But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name: Which were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God." },
+        { ref: "Galatians 4:7", text: "Wherefore thou art no more a servant, but a son; and if a son, then an heir of God through Christ." }
+      ]
+    },
+    {
+      claim: "The dead king departs not dead but living, enthroned in the place of Osiris and commanding the living, as messengers of Ra arrive to summon him — resurrection achieved through the correct performance of the funerary ritual",
+      religion: "Egyptian Occultism",
+      keywords: ["pyramid texts king departs living", "ritual resurrection osiris throne", "egyptian occultism ascension ritual"],
+      sourceQuote: { ref: "The Pyramid Texts (Mercer, 1952), Utterance 213", text: "O N., thou didst not depart dead; thou didst depart living, (so) thou sittest upon the throne of Osiris... thou commandest the living." },
+      verses: [
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." },
+        { ref: "John 11:25", text: "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:" }
+      ]
+    },
+    {
+      claim: "The dead scribe's own heart is weighed on the balance by Thoth and found righteous on its own merit, granting entry to paradise",
+      religion: "Egyptian Occultism",
+      keywords: ["book of the dead weighing of the heart", "thoth balance judgment egypt", "egyptian occultism heart righteous"],
+      sourceQuote: { ref: "The Book of the Dead (Budge, 1895), Plate IV", text: "His heart is found righteous coming forth from the balance, and it hath not sinned against god or goddess. Thoth hath weighed it according to the decree uttered unto him by the company of the gods; and it is very true and righteous." },
+      note: "The Papyrus of Ani's judgment scene — the deceased's own heart, weighed against the feather of Maat, must be found righteous unaided for the soul to pass into paradise.",
+      verses: [
+        { ref: "Isaiah 64:6", text: "But we are all as an unclean thing, and all our righteousnesses are as filthy rags; and we all do fade as a leaf; and our iniquities, like the wind, have taken us away." },
+        { ref: "Romans 3:20", text: "Therefore by the deeds of the law there shall no flesh be justified in his sight: for by the law is the knowledge of sin." }
+      ]
+    },
+    {
+      claim: "A spell recited over the heart itself compels it not to testify against the deceased at judgment: \"my heart, my mother... may there be nothing to resist me at my judgment\"",
+      religion: "Egyptian Occultism",
+      keywords: ["book of the dead heart scarab spell", "silence my heart judgment", "egyptian occultism negative confession"],
+      sourceQuote: { ref: "The Book of the Dead (Budge, 1895), Plate III, Ch. XXX", text: "My heart my mother, my heart my mother, my heart my coming into being! May there be nothing to resist me at my judgment; may there be no opposition to me from the Tchatcha; may there be no parting of thee from me in the presence of him who keepeth the scales!" },
+      note: "Chapter XXX(B), traditionally inscribed on a heart-scarab amulet placed on the mummy — a spell whose entire purpose is to silence the heart so it cannot testify truthfully against its owner.",
+      verses: [
+        { ref: "Hebrews 4:13", text: "Neither is there any creature that is not manifest in his sight: but all things are naked and opened unto the eyes of him with whom we have to do." },
+        { ref: "Jeremiah 17:10", text: "I the LORD search the heart, I try the reins, even to give every man according to his ways, and according to the fruit of his doings." }
+      ]
+    },
+    {
+      claim: "A boy medium stares into a vessel of oil while a magician invokes the gods by secret names, compelling them to answer questions through the child's vision",
+      religion: "Egyptian Occultism",
+      keywords: ["demotic magical papyrus vessel divination", "boy medium egyptian divination", "egyptian occultism child oracle"],
+      sourceQuote: { ref: "The Demotic Magical Papyrus of London and Leiden (Griffith & Thompson, 1904-1909), Col. II", text: "You say to the boy 'Open your eyes'; when he opens his eyes and sees the light, you make him cry out, saying 'Grow, O light, come forth, O light, rise, O light, ascend...'" },
+      note: "A 2nd/3rd-century AD Egyptian magical handbook — vessel- (or lamp-) divination through a child medium was one of its most common procedures.",
+      verses: [
+        { ref: "Deuteronomy 18:10-12", text: "There shall not be found among you any one that... useth divination, or an observer of times, or an enchanter, or a witch... For all that do these things are an abomination unto the LORD." },
+        { ref: "1 Samuel 28:7", text: "Then said Saul unto his servants, Seek me a woman that hath a familiar spirit, that I may go to her, and inquire of her." }
+      ]
+    },
+    {
+      claim: "The magician invokes a universal, unseen creator-god by a chain of secret names — \"Osoronnophris, whom no man hath seen at any time\" — to compel him to answer and obey",
+      religion: "Egyptian Occultism",
+      keywords: ["headless one invocation pgm", "osoronnophris secret names magic", "egyptian occultism compel god"],
+      sourceQuote: { ref: "Fragment of a Graeco-Egyptian Work upon Magic (Goodwin, 1852), Spell 4", text: "I call thee, the headless one, that didst create earth and heaven, that didst create night and day, thee the creator of light and darkness. Thou art Osoronnophris, whom no man hath seen at any time." },
+      note: "From the only public-domain translation of a Greek Magical Papyrus (British Museum Papyrus XLVI Greek, c. 2nd-4th century AD) — one papyrus, not the full modern PGM corpus, which remains under copyright.",
+      verses: [
+        { ref: "Isaiah 40:13-14", text: "Who hath directed the Spirit of the LORD, or being his counsellor hath taught him? With whom took he counsel, and who instructed him...?" },
+        { ref: "Exodus 20:7", text: "Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain." }
+      ]
+    },
+    {
+      claim: "A magician's power lies in \"words of power\" recited with exact pronunciation — correctness of speech itself, not the speaker's character, determines whether the magic succeeds",
+      religion: "Egyptian Occultism",
+      keywords: ["egyptian magic words of power pronunciation", "budge words of power correct speech", "egyptian occultism mechanistic magic"],
+      sourceQuote: { ref: "Egyptian Magic (Budge, 1899), para. 5", text: "He uttered the words of power which he knew with correct pronunciation, and halted not in his speech, and was perfect both in giving the command and in saying the word." },
+      verses: [
+        { ref: "Matthew 6:7", text: "But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking." },
+        { ref: "1 Samuel 16:7", text: "For the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart." }
+      ]
+    },
+    {
+      claim: "The Coffin Texts democratized the royal afterlife: spells once reserved for pharaohs alone were inscribed on ordinary coffins, letting any person who could afford one navigate the underworld's hazards by the same magic",
+      religion: "Egyptian Occultism",
+      keywords: ["coffin texts democratization afterlife", "middle kingdom afterlife spells", "egyptian occultism coffin spells"],
+      positionSummary: "The Coffin Texts (Middle Kingdom, c. 2100-1700 BC) adapted and expanded the earlier royal-only Pyramid Texts into spells any non-royal person could have inscribed on their coffin, extending the promise of a secure afterlife — previously a privilege of kingship — to whoever could afford the ritual and the object. No public-domain English translation of the Coffin Texts exists (R. O. Faulkner's 1973-78 translation remains the standard, actively copyrighted edition), so this entry has no source text.",
+      verses: [
+        { ref: "Galatians 3:28", text: "There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus." },
+        { ref: "Ephesians 2:8-9", text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast." }
+      ]
+    },
+    {
+      claim: "The Book of Two Ways maps the underworld's twin roads of fire and water, showing the soul precisely which obstacles lie ahead and how to pass them safely",
+      religion: "Egyptian Occultism",
+      keywords: ["book of two ways underworld map", "egyptian occultism fire water paths", "coffin texts cosmography"],
+      positionSummary: "Found painted on the floors of Middle Kingdom coffins alongside the Coffin Texts (of which it is technically a part, roughly spells 1029-1130), the Book of Two Ways is the oldest known map of the hereafter — a diagram of parallel paths of fire and water the soul must correctly navigate, each hazard labeled and countered by an accompanying spell. As a subset of the Coffin Texts, no public-domain English translation exists for this either.",
+      verses: [
+        { ref: "Psalm 23:4", text: "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me." },
+        { ref: "John 14:6", text: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me." }
+      ]
+    },
+    {
+      claim: "\"Satan represents indulgence, instead of abstinence!\" — self-gratification is exalted over self-denial",
+      religion: "LaVeyan Satanism",
+      keywords: ["satanic bible nine statements", "satan represents indulgence", "laveyan satanism hedonism"],
+      sourceQuote: { ref: "The Satanic Bible, The Nine Satanic Statements", text: "Satan represents indulgence, instead of abstinence!" },
+      note: "The first of LaVey's Nine Satanic Statements, published by the Church of Satan as a summary of its philosophy.",
+      verses: [
+        { ref: "Galatians 5:16", text: "This I say then, Walk in the Spirit, and ye shall not fulfil the lust of the flesh." },
+        { ref: "1 Peter 2:11", text: "Dearly beloved, I beseech you as strangers and pilgrims, abstain from fleshly lusts, which war against the soul;" }
+      ]
+    },
+    {
+      claim: "\"Satan represents kindness to those who deserve it, instead of love wasted on ingrates!\" — love is conditional on merit",
+      religion: "LaVeyan Satanism",
+      keywords: ["satanic bible kindness to those who deserve it", "laveyan satanism conditional love", "love wasted on ingrates"],
+      sourceQuote: { ref: "The Satanic Bible, The Nine Satanic Statements", text: "Satan represents kindness to those who deserve it, instead of love wasted on ingrates!" },
+      verses: [
+        { ref: "Matthew 5:44", text: "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;" },
+        { ref: "Luke 6:35", text: "But love ye your enemies, and do good, and lend, hoping for nothing again; and your reward shall be great, and ye shall be the children of the Highest: for he is kind unto the unthankful and to the evil." }
+      ]
+    },
+    {
+      claim: "\"Satan represents vengeance, instead of turning the other cheek!\"",
+      religion: "LaVeyan Satanism",
+      keywords: ["satanic bible vengeance", "satan represents vengeance", "laveyan satanism turning the other cheek"],
+      sourceQuote: { ref: "The Satanic Bible, The Nine Satanic Statements", text: "Satan represents vengeance, instead of turning the other cheek!" },
+      verses: [
+        { ref: "Matthew 5:39", text: "But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also." },
+        { ref: "Romans 12:19", text: "Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord." }
+      ]
+    },
+    {
+      claim: "Man is \"just another animal,\" made vicious rather than virtuous by his claimed spiritual development",
+      religion: "LaVeyan Satanism",
+      keywords: ["satan represents man as just another animal", "laveyan satanism human nature", "satanic bible most vicious animal"],
+      sourceQuote: { ref: "The Satanic Bible, The Nine Satanic Statements", text: "Satan represents man as just another animal, sometimes better, more often worse than those that walk on all-fours, who, because of his \"divine spiritual and intellectual development,\" has become the most vicious animal of all!" },
+      verses: [
+        { ref: "Genesis 1:27", text: "So God created man in his own image, in the image of God created he him; male and female created he them." },
+        { ref: "Psalm 8:5", text: "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour." }
+      ]
+    },
+    {
+      claim: "Set is a real, literal, non-physical intelligence who communicates directly with initiates — not merely a psychological symbol",
+      religion: "Temple of Set",
+      keywords: ["temple of set theistic satanism", "set literal entity aquino", "book of coming forth by night"],
+      positionSummary: "The Temple of Set, founded in 1975 by Michael Aquino after he split from the Church of Satan, explicitly rejects Anton LaVey's purely symbolic/psychological use of \"Satan.\" Aquino claimed to have received a text, \"The Book of Coming Forth by Night,\" directly from Set, an actual non-physical intelligence identified with the ancient Egyptian deity Setekh.",
+      verses: [
+        { ref: "2 Corinthians 11:14", text: "And no marvel; for Satan himself is transformed into an angel of light." },
+        { ref: "1 John 4:1", text: "Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world." }
+      ]
+    },
+    {
+      claim: "\"Xeper\" — the self-authored, self-directed pursuit of one's own becoming — is the Setian's central spiritual principle",
+      religion: "Temple of Set",
+      keywords: ["xeper setian philosophy", "temple of set self-becoming", "setian self-authored evolution"],
+      positionSummary: "\"Xeper\" (an ancient Egyptian word meaning roughly \"I have come into being\") names the Temple of Set's core practice: treating one's own consciousness and spiritual evolution as fundamentally self-created and self-directed, rather than something received, revealed, or dependent on God.",
+      verses: [
+        { ref: "Jeremiah 10:23", text: "O LORD, I know that the way of man is not in himself: it is not in man that walketh to direct his steps." },
+        { ref: "Proverbs 3:5-6", text: "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths." }
+      ]
+    },
+    {
+      claim: "Set, not the Serpent's deception, is credited with first giving humanity self-aware consciousness, separating man from the animals",
+      religion: "Temple of Set",
+      keywords: ["set gift of consciousness", "temple of set genesis serpent reinterpreted", "isolate intelligence setian"],
+      positionSummary: "Setian teaching credits Set with originally bestowing \"isolate intelligence\" — self-aware consciousness — on humanity, reframing the role the Genesis serpent plays in Eden as a gift of enlightenment rather than a deception leading to the Fall.",
+      verses: [
+        { ref: "Genesis 3:13", text: "And the LORD God said unto the woman, What is this that thou hast done? And the woman said, The serpent beguiled me, and I did eat." },
+        { ref: "2 Corinthians 11:3", text: "But I fear, lest by any means, as the serpent beguiled Eve through his subtlety, so your minds should be corrupted from the simplicity that is in Christ." }
+      ]
+    },
+    {
+      claim: "Setians seek companionship and self-deification alongside Set, not submissive worship of him",
+      religion: "Temple of Set",
+      keywords: ["setian rejects worship", "temple of set self-deification", "companion of set not worshipper"],
+      positionSummary: "Rather than worshipping Set in a posture of submission, Setians describe themselves as students or companions of Set, pursuing their own godlike self-aware intelligence as an end in itself.",
+      verses: [
+        { ref: "Psalm 95:6", text: "O come, let us worship and bow down: let us kneel before the LORD our maker." },
+        { ref: "Exodus 20:3", text: "Thou shalt have no other gods before me." }
+      ]
+    },
+    {
+      claim: "Satan is worshipped and petitioned as a literal being through ceremonial ritual magic",
+      religion: "Theistic Satanism",
+      keywords: ["theistic satanism literal satan worship", "ceremonial magic satan worship", "devil worship ritual"],
+      positionSummary: "Unlike LaVeyan Satanism's atheistic, symbolic framework, theistic Satanists — a loose, unorganized category rather than one movement, spanning many independent and sometimes rival individuals and small groups — hold that Satan is a real supernatural being to be venerated, invoked, or petitioned through ceremonial magic ritual.",
+      verses: [
+        { ref: "Deuteronomy 18:10-12", text: "There shall not be found among you any one that maketh his son or his daughter to pass through the fire, or that useth divination, or an observer of times, or an enchanter, or a witch... For all that do these things are an abomination unto the LORD." },
+        { ref: "Isaiah 8:19", text: "And when they shall say unto you, Seek unto them that have familiar spirits, and unto wizards that peep, and that mutter: should not a people seek unto their God?" }
+      ]
+    },
+    {
+      claim: "Ritual invocation and evocation are used to commune with or draw on the power of Satan and other spirits",
+      religion: "Theistic Satanism",
+      keywords: ["theistic satanism invocation evocation", "ritual magic demons theistic satanism"],
+      positionSummary: "Practices across theistic Satanist groups commonly include ceremonial invocation (inviting a spirit's presence or influence into the practitioner) and evocation (summoning a spirit to manifest and be commanded or petitioned) — techniques adapted from older ceremonial magic traditions.",
+      verses: [
+        { ref: "Leviticus 19:31", text: "Regard not them that have familiar spirits, neither seek after wizards, to be defiled by them: I am the LORD your God." },
+        { ref: "Ephesians 6:12", text: "For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places." }
+      ]
+    },
+    {
+      claim: "The Order of Nine Angles (O9A) is an occult neo-Nazi network that U.S. federal prosecutors have called \"a racially motivated violent extremist group\"",
+      religion: "Order of Nine Angles",
+      keywords: ["order of nine angles o9a", "occult neo-nazi extremist group", "o9a federal prosecutors"],
+      positionSummary: "This entry exists only to document and warn against O9A, not to present its ideology as a legitimate alternative belief system — no O9A material is quoted or summarized here. U.S. federal prosecutors have officially described the group as \"an occult-based neo-Nazi and racially motivated violent extremist group.\" A joint threat assessment by the National Counterterrorism Center, FBI, and Department of Homeland Security identified it as a growing influence among white supremacists, and UK anti-extremism group Hope Not Hate has called for it to be formally proscribed as a terrorist organization.",
+      verses: [
+        { ref: "1 John 4:1", text: "Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world." },
+        { ref: "Ephesians 6:12", text: "For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places." }
+      ]
+    },
+    {
+      claim: "O9A ideology has been directly linked to real terrorist violence, including the 1999 London nail bombings and multiple UK terrorism convictions",
+      religion: "Order of Nine Angles",
+      keywords: ["order of nine angles terrorism", "david copeland nail bombings o9a", "o9a terrorism convictions"],
+      positionSummary: "David Copeland, who carried out the 1999 London nail bombings targeting Black, Bangladeshi, and gay communities — killing 3 people and injuring over 100 — was a neo-Nazi militant reported to have been influenced by O9A-linked material. Hope Not Hate documented at least eight UK terrorism convictions between 2019 and 2021 tied to O9A influence.",
+      verses: [
+        { ref: "John 8:44", text: "Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him." },
+        { ref: "Galatians 5:19-21", text: "Now the works of the flesh are manifest... hatred, variance, emulations, wrath, strife, seditions... murders... they which do such things shall not inherit the kingdom of God." }
+      ]
+    },
+    {
+      claim: "The supreme creator is too distant to petition directly; practitioners instead venerate and work through intermediary Orishas, syncretized with Catholic saints",
+      religion: "Santeria",
+      keywords: ["santeria orishas intermediaries", "olodumare distant creator", "orishas syncretized catholic saints"],
+      positionSummary: "In Santería (Regla de Ocha, an Afro-Cuban tradition blending Yoruba Orisha veneration with Catholicism), the supreme being Olodumare/Olorun is held to be too remote for direct petition. Devotion instead centers on Orishas — Elegua, Ogun, Yemayá, Changó, Obatalá, Oshún, and others — each paired with a Catholic saint (Changó with Saint Barbara, Yemayá with Our Lady of Regla, Elegua with Saint Anthony) as intermediaries who are petitioned for specific help and protection.",
+      verses: [
+        { ref: "1 Timothy 2:5", text: "For there is one God, and one mediator between God and men, the man Christ Jesus;" },
+        { ref: "John 14:6", text: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me." }
+      ]
+    },
+    {
+      claim: "Animal sacrifice is offered to nourish the Orishas and secure their favor and power",
+      religion: "Santeria",
+      keywords: ["santeria animal sacrifice", "ashe orisha offerings", "santeria ritual sacrifice"],
+      positionSummary: "Animal sacrifice — offering blood and life-force (ashé) to the Orishas — is a central, legally-recognized ritual practice in Santería (affirmed as protected religious exercise by the U.S. Supreme Court in Church of the Lukumi Babalu Aye v. City of Hialeah, 1993), understood as feeding and empowering the Orishas in exchange for their continued blessing and protection.",
+      verses: [
+        { ref: "Hebrews 10:10-12", text: "By the which will we are sanctified through the offering of the body of Jesus Christ once for all... But this man, after he had offered one sacrifice for sins for ever, sat down on the right hand of God;" },
+        { ref: "Psalm 50:12-13", text: "If I were hungry, I would not tell thee: for the world is mine, and the fulness thereof. Will I eat the flesh of bulls, or drink the blood of goats?" }
+      ]
+    },
+    {
+      claim: "Divination through cowrie shells or a babalawo priest reveals one's destiny and the Orishas' guidance",
+      religion: "Santeria",
+      keywords: ["santeria divination diloggun", "babalawo ifa divination", "santeria cowrie shells"],
+      positionSummary: "Practitioners consult the Orishas' will through divination systems such as the diloggún (cowrie shells) or, for deeper questions, through a babalawo priest using the Ifá system — seeking to learn one's destiny and receive guidance directly from the spirit world.",
+      verses: [
+        { ref: "Deuteronomy 18:10-12", text: "There shall not be found among you any one that maketh his son or his daughter to pass through the fire, or that useth divination, or an observer of times... For all that do these things are an abomination unto the LORD." },
+        { ref: "Isaiah 8:19", text: "And when they shall say unto you, Seek unto them that have familiar spirits, and unto wizards that peep, and that mutter: should not a people seek unto their God?" }
+      ]
+    },
+    {
+      claim: "During ceremonies, an Orisha is believed to possess and speak or act through an initiate, who becomes its \"horse\"",
+      religion: "Santeria",
+      keywords: ["santeria spirit possession", "orisha mounting horse caballo", "santeria trance ceremony"],
+      positionSummary: "In Santería ceremony, an initiate (\"caballo\", or horse) may become possessed or \"mounted\" by an Orisha, who is understood to temporarily take control of the person's body and consciousness to speak, dance, or act directly among the community.",
+      verses: [
+        { ref: "1 Corinthians 14:32", text: "And the spirits of the prophets are subject to the prophets." },
+        { ref: "2 Timothy 1:7", text: "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind." }
+      ]
+    },
+    {
+      claim: "Olorun, the supreme sky-god, is considered too distant or indifferent to interfere in the affairs of the world",
+      religion: "Yoruba Religion",
+      keywords: ["olorun distant sky god", "yoruba supreme god uninvolved", "olorun idleness repose"],
+      sourceQuote: { ref: "Yoruba Religion (Ellis, 1894), Ch. II", text: "Olorun is considered too distant, or too indifferent, to interfere in the affairs of the world. The natives say that he enjoys a life of complete idleness and repose, a blissful condition according to their ideas." },
+      verses: [
+        { ref: "Acts 17:27", text: "That they should seek the Lord, if haply they might feel after him, and find him, though he be not far from every one of us:" },
+        { ref: "Psalm 145:18", text: "The LORD is nigh unto all them that call upon him, to all that call upon him in truth." }
+      ]
+    },
+    {
+      claim: "A babalawo priest divines the will of the gods by casting sixteen palm-nuts; nothing important is undertaken without consulting him",
+      religion: "Yoruba Religion",
+      keywords: ["babalawo ifa palm nuts divination", "yoruba ifa priest consultation", "ifa god of divination"],
+      sourceQuote: { ref: "Yoruba Religion (Ellis, 1894), Ch. II & V", text: "A priest of Ifa is termed a babalawo... and the profession is very lucrative, as the natives never undertake anything of importance without consulting the god, and always act in accordance with the answer returned... it is through his agency, as the priest of Ifa, the god of divination, that man learns what is necessary to be done to please the other gods." },
+      verses: [
+        { ref: "Deuteronomy 18:10-12", text: "There shall not be found among you any one that maketh his son or his daughter to pass through the fire, or that useth divination... For all that do these things are an abomination unto the LORD." },
+        { ref: "James 1:5", text: "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him." }
+      ]
+    },
+    {
+      claim: "A masked man representing an ancestor risen from the dead (Egungun) appears among the living to bring news from the land of the dead",
+      religion: "Yoruba Religion",
+      keywords: ["egungun ancestor risen from dead", "yoruba masked spirit ancestor", "egungun bone skeleton"],
+      sourceQuote: { ref: "Yoruba Religion (Ellis, 1894), Ch. VI", text: "Egungun himself is supposed to be a man risen from the dead... He is supposed to have returned from the land of the dead in order to ascertain what is going on in the land of the living." },
+      verses: [
+        { ref: "Luke 16:31", text: "And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead." },
+        { ref: "Hebrews 9:27", text: "And as it is appointed unto men once to die, but after this the judgment:" }
+      ]
+    },
+    {
+      claim: "Each person is inhabited by multiple distinct spirits located in different parts of the body, each receiving its own offerings",
+      religion: "Yoruba Religion",
+      keywords: ["yoruba indwelling spirits body", "olori ipin ipori", "multiple souls yoruba religion"],
+      sourceQuote: { ref: "Yoruba Religion (Ellis, 1894), Ch. VII", text: "Olori, dwells in the head, the second, Ipin ijeun, in the stomach, and the third, Ipori, in the great toe... Offerings are made to him, chiefly fowls." },
+      note: "Three separate indwelling spirits are described, each located in a different part of the body and each the recipient of its own distinct sacrifice.",
+      verses: [
+        { ref: "1 Thessalonians 5:23", text: "And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ." }
+      ]
+    },
+    {
+      claim: "Papa Legba, guardian of the gates, must be petitioned first in every ceremony to open the way to the other spirits",
+      religion: "Vodou",
+      keywords: ["papa legba gatekeeper vodou", "legba open the gate", "vodou crossroads spirit"],
+      sourceQuote: { ref: "The Magic Island (Seabrook, 1929), Ch. V", text: "Papa Legba, ouvri barrière pour li passer! ... (Father Legba, open wide the gate that he may pass!)" },
+      note: "According to this account — a 1929 outsider's memoir, not a verified or authoritative Vodou source — Legba is invoked at the start of ceremony as the gatekeeper who alone can open the way to every other spirit.",
+      verses: [
+        { ref: "John 10:9", text: "I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture." },
+        { ref: "John 14:6", text: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me." }
+      ]
+    },
+    {
+      claim: "Vodou venerates a large pantheon of loa — spirits such as Damballa, Agoué, and Ezilée — each paired with a Catholic saint and each governing a different domain of life",
+      religion: "Vodou",
+      keywords: ["vodou loa pantheon", "damballa agoue ezilee", "vodou catholic saint syncretism"],
+      sourceQuote: { ref: "The Magic Island (Seabrook, 1929), Ch. I", text: "Papa Legba, guardian of the gates, who was the most benevolent; Damballa Oueddo, wisest and most powerful, whose symbol was the serpent; Loco, god of the forests; Agoué, god of the sea; Maitresse Ezilée, who was the mild Blessed Virgin Mary; Ogoun Badagris, the bloody dreadful One whose voice was thunder." },
+      note: "According to this account — a 1929 outsider's memoir, not a verified or authoritative Vodou source — each loa was described to the author as syncretized with a specific Catholic saint.",
+      verses: [
+        { ref: "1 Timothy 2:5", text: "For there is one God, and one mediator between God and men, the man Christ Jesus;" },
+        { ref: "Exodus 20:3", text: "Thou shalt have no other gods before me." }
+      ]
+    },
+    {
+      claim: "Animal sacrifice — the blood poured out to the loa — is the central offering of Vodou ceremony",
+      religion: "Vodou",
+      keywords: ["vodou animal sacrifice", "petro rite blood offering", "vodou ceremonial sacrifice"],
+      sourceQuote: { ref: "The Magic Island (Seabrook, 1929), Ch. III", text: "The papaloi plunged the long, pointed blade beneath the bull's shoulder and through its heart... it spurted in a hard, small stream from the bull's pierced side, where the mamaloi knelt with her bowl to receive it and transferred it bowl by bowl to the great common trough." },
+      note: "According to this account — a 1929 outsider's memoir, not a verified or authoritative Vodou source — of a Petro rite the author witnessed and personally took part in.",
+      verses: [
+        { ref: "Hebrews 10:10-12", text: "By the which will we are sanctified through the offering of the body of Jesus Christ once for all... But this man, after he had offered one sacrifice for sins for ever, sat down on the right hand of God;" },
+        { ref: "Psalm 50:12-13", text: "If I were hungry, I would not tell thee: for the world is mine, and the fulness thereof. Will I eat the flesh of bulls, or drink the blood of goats?" }
+      ]
+    },
+    {
+      claim: "During ceremony, a loa is believed to descend and take possession of a worshipper's body, speaking and acting through them until it departs",
+      religion: "Vodou",
+      keywords: ["vodou spirit possession loa", "mounted by a loa", "vodou trance ceremony"],
+      sourceQuote: { ref: "The Magic Island (Seabrook, 1929), Ch. VI", text: "The god, replete with food and quietly drunken, lay down to sleep alone in his silent temple. But when morning came, the god had departed. Only an humble ragged negro lay there dozing at the foot of the altar." },
+      note: "According to this account — a 1929 outsider's memoir, not a verified or authoritative Vodou source — of a man reportedly possessed by the loa Ogoun Badagris for the course of an evening's ceremony.",
+      verses: [
+        { ref: "1 Corinthians 14:32", text: "And the spirits of the prophets are subject to the prophets." },
+        { ref: "2 Timothy 1:7", text: "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind." }
+      ]
+    },
+    {
       claim: "Souls are purified in Purgatory after death before entering heaven",
       religion: "Catholicism",
       keywords: ["purgatory", "catholic purgatory doctrine", "temporal punishment after death", "purified after death"],
@@ -1325,6 +1998,13 @@
       chip.style.display = matches ? '' : 'none';
       if (matches) anyVisible = true;
     });
+    // Hide a whole group (including its label) when the search leaves none
+    // of its chips visible, so e.g. "Cults / Sects" doesn't show as an
+    // empty header while every chip beneath it is filtered out.
+    document.querySelectorAll('.sidebar-group').forEach(group => {
+      const hasVisible = [...group.querySelectorAll('.side-chip')].some(c => c.style.display !== 'none');
+      group.style.display = hasVisible ? '' : 'none';
+    });
     sidebarEmpty.style.display = anyVisible ? 'none' : 'block';
   });
 
@@ -2049,6 +2729,448 @@
       tradition: 'Catholicism',
       license: 'Public domain (pre-1929)',
       urls: ['./ineffabilis-deus.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Kybalion (1908), attributed to "Three Initiates" — the
+     * foundational modern text of Hermeticism, laying out the Seven
+     * Hermetic Principles (Mentalism, Correspondence, Vibration, Polarity,
+     * Rhythm, Cause and Effect, Gender). Public domain (Project Gutenberg
+     * ebook #14209). Vendored locally as a flat paragraph-by-paragraph
+     * extraction, one row per prose paragraph within each of its 15
+     * chapters — mirroring the Rerum Novarum/Ineffabilis Deus "para. N"
+     * citation style above, since this too is discursive prose rather than
+     * verse-numbered scripture.
+     *
+     * Filed under Gnosticism rather than a standalone "Hermeticism"
+     * category (2026-07-27 restructure) — Hermeticism was folded in here
+     * alongside Corpus Hermeticum and the Emerald Tablet as one broader
+     * Western-esoteric/gnostic-adjacent grouping, at the user's request.
+     */
+    {
+      id: 'kybalion',
+      label: 'The Kybalion',
+      tradition: 'Gnosticism',
+      license: 'Public domain — Project Gutenberg ebook #14209',
+      urls: ['./kybalion.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Emerald Tablet (Tabula Smaragdina) — a short, single-paragraph
+     * Hermetic text (source of "as above, so below") with a real
+     * manuscript history: attested in Arabic alchemical sources from
+     * roughly the 8th-9th century, translated into Latin by the 12th
+     * century, and hugely influential on Western alchemy since. Its
+     * attribution to Hermes Trismegistus is legendary, like the rest of
+     * the Hermetica, but the text itself is a genuine, long-transmitted
+     * document — unlike the modern (1930s, channeled, unverifiable)
+     * "Emerald Tablets of Thoth" attributed to Maurice Doreal, which is
+     * not included here for that reason.
+     *
+     * Text is Isaac Newton's own English translation, c. 1680 (Newton
+     * personally studied and copied Hermetic/alchemical texts) — safely
+     * public domain by age regardless of which modern edition transcribes
+     * it. Spelling has been lightly modernized from Newton's original
+     * manuscript shorthand ("wch" -> "which", "ye" -> "the", etc.) for
+     * readability; wording is otherwise unchanged. The original numbering
+     * has a few lettered sub-verses (6a, 7a, 11a) which are renumbered
+     * sequentially here, the same citation-stability tradeoff already
+     * made for Rerum Novarum/Ineffabilis Deus above.
+     *
+     * Filed under Gnosticism (see Kybalion note above) rather than a
+     * standalone Hermeticism category.
+     */
+    {
+      id: 'emerald-tablet',
+      label: 'The Emerald Tablet',
+      tradition: 'Gnosticism',
+      license: 'Public domain — Isaac Newton\'s translation, c. 1680',
+      urls: ['./emerald-tablet.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Yasna, the core liturgy of the Avesta, translated by L. H. Mills
+     * (Sacred Books of the East vol. 31, American Edition 1898) — public
+     * domain by age and by translator's death (1918). Vendored locally as
+     * one row per verse, ref format "Yasna N.M".
+     *
+     * Deliberately excludes three parts of the 72-chapter Yasna that a
+     * commonly-cited modern compilation (sacred-texts.com) swaps a
+     * different, unclear-license translation into: the five actual
+     * Gathas (Yasna 28-34, 43-51, 53 — rendered there via Bartholomae/
+     * Taraporewala, "The Divine Songs of Zarathushtra", 1951, likely still
+     * under copyright) and the Zoroastrian Creed (Yasna 12 — rendered
+     * there via a 1996 J. H. Peterson translation of unclear license).
+     * Everything else (Yasna 0-11, 13-27, 35-42, 52, 54-72) is Mills' own
+     * clearly public-domain 1898 wording, confirmed chapter-by-chapter
+     * against the translator attributions on that page — still a
+     * substantial corpus including the Yasna Haptanghaiti ("Seven
+     * Chapters", linguistically as old as the Gathas), the Fravashi
+     * invocations, the Fire hymns, and the Ahunwar/Ashem Vohu commentary.
+     */
+    {
+      id: 'yasna',
+      label: 'The Yasna',
+      tradition: 'Zoroastrianism',
+      license: 'Public domain — L. H. Mills translation, Sacred Books of the East vol. 31 (American Edition, 1898)',
+      urls: ['./yasna.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Key to Theosophy (1889) by H. P. Blavatsky — a Q&A-format
+     * primer on the Theosophical Society's core doctrines. Public domain
+     * (Project Gutenberg ebook #55618); Blavatsky died 1891. Vendored as
+     * one row per Q/A turn or paragraph, ref "The Key to Theosophy,
+     * Section N, para. M".
+     */
+    {
+      id: 'key-to-theosophy',
+      label: 'The Key to Theosophy',
+      tradition: 'Theosophy',
+      license: 'Public domain — Project Gutenberg ebook #55618',
+      urls: ['./key-to-theosophy.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Secret Doctrine (1888) by H. P. Blavatsky — her magnum opus,
+     * Vol. I "Cosmogenesis" and Vol. II "Anthropogenesis". Public domain
+     * (Project Gutenberg ebooks #54824 and #54488). Vendored as one row
+     * per paragraph, grouped by Proem/Part I/II/III, ref "The Secret
+     * Doctrine, Cosmogenesis|Anthropogenesis, <Part>, para. N".
+     *
+     * Deliberately limited to the original two volumes (Cosmogenesis +
+     * Anthropogenesis), matching the 1888 first edition. Project
+     * Gutenberg additionally hosts a "Vol. 3 of 4" (a separate 1897
+     * posthumous compilation of Blavatsky's other papers, edited by
+     * Besant/Mead — not part of the original work) and a "Vol. 4 of 4"
+     * (a pure alphabetical index to the other three, no independent
+     * content) — both skipped as out of scope for a source-text corpus.
+     */
+    {
+      id: 'secret-doctrine',
+      label: 'The Secret Doctrine',
+      tradition: 'Theosophy',
+      license: 'Public domain — Project Gutenberg ebooks #54824 (Vol. I) and #54488 (Vol. II)',
+      urls: ['./secret-doctrine.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * The Book of the Law (Liber AL vel Legis), the founding scripture of
+     * Thelema — dictated to Aleister Crowley in 1904, first published
+     * 1909 (privately, by the A∴A∴, as part of "ΘΕΛΗΜΑ"), safely public
+     * domain under the pre-1923 bright-line rule regardless of any
+     * copyright O.T.O. asserts over Crowley's later works.
+     *
+     * Deliberately does NOT include a longer Crowley text (e.g. Magick in
+     * Theory and Practice, requested as a second, bigger source). The
+     * only available transcription found (sacred-texts.com, sourced from
+     * an O.T.O.-distributed diskette edition) carries an explicit
+     * "Copyright (c) O.T.O." notice with a restrictive "personal use or
+     * research" license — incompatible with vendoring it into a public,
+     * freely-redistributable app corpus, regardless of the 1929
+     * first-edition text's own age. Project Gutenberg, notably, hosts two
+     * of Crowley's secular literary works but none of his occult corpus,
+     * consistent with that being genuinely unclear/actively-claimed
+     * territory rather than settled public domain.
+     */
+    {
+      id: 'book-of-the-law',
+      label: 'The Book of the Law',
+      tradition: 'Thelema',
+      license: 'Public domain (first published 1909, pre-1923)',
+      urls: ['./book-of-the-law.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * Yoruba Religion — the West African tradition of Orisha veneration
+     * that Santería (Cuba) and related New World traditions (Vodou,
+     * Candomblé) descend from. Text is A. B. Ellis, "The Yoruba-Speaking
+     * Peoples of the Slave Coast of West Africa" (1894), a British
+     * colonial-era ethnography — public domain (archive.org marks it
+     * NOT_IN_COPYRIGHT; pre-1923). Kept as its own tradition rather than
+     * relabeled "Santería": it documents the 19th-century ancestral
+     * African religion, not the distinct Cuban Catholic-syncretic
+     * tradition, and it's an outsider's colonial-era account rather than
+     * the tradition's own voice — the same caveat already applied to the
+     * Skull and Bones entry's 1876 source.
+     *
+     * Vendored from an OCR scan (archive.org djvu text), not a clean
+     * proofread transcription — no equivalent exists elsewhere. Obvious
+     * scan-noise fragments (stray characters, illustration captions) were
+     * filtered out algorithmically, but some letter-level OCR noise
+     * remains in the running text (this is a lower fidelity source than
+     * the Gutenberg/Wikisource-sourced texts elsewhere in this file).
+     * Limited to the religion-focused chapters (Chief Gods, Minor Gods,
+     * Priests and Worship, Egungun/superstitions, Indwelling Spirits,
+     * birth/marriage/death ceremonies, and folk-lore tales) — chapters on
+     * language, law, government, and proverbs were excluded as out of
+     * scope for a source-text corpus.
+     */
+    {
+      id: 'yoruba-religion',
+      label: 'Yoruba Religion (Ellis, 1894)',
+      tradition: 'Yoruba Religion',
+      license: 'Public domain — A. B. Ellis, 1894 (archive.org, not in copyright)',
+      urls: ['./yoruba-religion.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * Gnosticism — Pistis Sophia, the single most substantial Gnostic
+     * scripture to survive antiquity (a Coptic manuscript bought by the
+     * British Museum in 1785). Unlike the Nag Hammadi texts (Gospel of
+     * Thomas, Apocryphon of John, etc. — not discovered until 1945, so no
+     * translation of them is old enough to be public domain), Pistis
+     * Sophia was already known and translated well before 1923. Used here:
+     * George Horner's 1924 literal translation (Society for Promoting
+     * Christian Knowledge), via Project Gutenberg ebook #76266 — a clean,
+     * proofread transcription, not an OCR scan, and safely public domain
+     * both by original 1924 publication date and by Gutenberg's own
+     * clearance process. Trimmed to just Horner's translation of the five
+     * Documents themselves (`pistis-sophia.json`, 202 paragraph rows, ref
+     * `Pistis Sophia (Horner, 1924), <Document>, para. N`) — Francis
+     * Legge's lengthy scholarly introduction and the back-matter indices
+     * are excluded as out of scope, the same principle already applied to
+     * Trent's canons and the Summa's Objections/Replies.
+     */
+    {
+      id: 'pistis-sophia',
+      label: 'Pistis Sophia (Horner, 1924)',
+      tradition: 'Gnosticism',
+      license: 'Public domain — George Horner, trans., Pistis Sophia (1924); Project Gutenberg ebook #76266',
+      urls: ['./pistis-sophia.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * Corpus Hermeticum — the 13 core Hermetic treatises (Poemandres
+     * through The Secret Sermon on the Mountain), G.R.S. Mead's 1906
+     * translation ("Thrice-Greatest Hermes"), public domain. Vendored from
+     * an archive.org PDFy mirror of the plain-text edition (clean,
+     * paragraph/section text, not an OCR scan). Ref format
+     * `Corpus Hermeticum (Mead, 1906), Libellus <roman>, <section>`,
+     * matching the standard modern citation convention for this text
+     * (e.g. "CH I.4"). 191 numbered-section rows. Filed under Gnosticism
+     * alongside the Kybalion/Emerald Tablet (2026-07-27 restructure) rather
+     * than a standalone Hermeticism category — see the Kybalion entry
+     * above for why.
+     */
+    {
+      id: 'corpus-hermeticum',
+      label: 'Corpus Hermeticum (Mead, 1906)',
+      tradition: 'Gnosticism',
+      license: 'Public domain — G.R.S. Mead, trans., The Corpus Hermeticum (1906)',
+      urls: ['./corpus-hermeticum.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * "Setna and the Magic Book" — an ancient Egyptian tale (Ptolemaic-era
+     * Demotic, ~1st century BC/AD) about Prince Setna Khaemwaset's quest
+     * for the legendary Book of Thoth. This is the closest thing to a
+     * public-domain "Book of Thoth" text that actually exists: no
+     * translation of any real ancient "Book of Thoth" content is public
+     * domain (see below), so this is the tale ABOUT the book — a story
+     * about finding and reading it — rather than the book's own purported
+     * words. Included at the user's explicit request as a stand-in for
+     * that gap, with this caveat carried in the label/cards.
+     *
+     * Translation: W. M. Flinders Petrie, "Egyptian Tales, Translated from
+     * the Papyri: Second Series" (1895), public domain, Project Gutenberg
+     * ebook #7413. Trimmed to just the tale itself (33 paragraph rows, ref
+     * `Setna and the Magic Book (Petrie, 1895), para. N`) — Petrie's
+     * scholarly "Remarks" section following it is excluded as out of
+     * scope, same principle as Pistis Sophia's introduction.
+     *
+     * Not usable: Richard Jasnow & Karl-Theodor Zauzich's modern scholarly
+     * reconstruction of actual Demotic "Book of Thoth" fragments
+     * (originally published 2005, revised as "Conversations in the House
+     * of Life," Harrassowitz Verlag, 2014) — still under active copyright,
+     * confirmed still commercially sold. Also not usable: Aleister
+     * Crowley's "The Book of Thoth" (1944) — an unrelated Tarot text, not
+     * ancient, and under the same O.T.O.-defended copyright that already
+     * ruled out a longer Crowley text for Thelema.
+     */
+    {
+      id: 'setna-magic-book',
+      label: 'Setna and the Magic Book (Petrie, 1895)',
+      tradition: 'Gnosticism',
+      license: 'Public domain — W. M. Flinders Petrie, trans., Egyptian Tales, Second Series (1895); Project Gutenberg ebook #7413',
+      urls: ['./setna-magic-book.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * Egyptian Occultism — a new sidebar category (2026-07-27) distinct
+     * from Gnosticism, covering ancient Egyptian funerary/magical texts and
+     * the Victorian Egyptological scholarship that first translated them.
+     * Five texts:
+     *
+     * 1. The Pyramid Texts — the oldest religious texts in the world (Old
+     * Kingdom, ~2400-2300 BC), carved into pyramid walls at Saqqara.
+     * Samuel A. B. Mercer's 1952 translation was the first-ever complete
+     * translation in any language. Public domain in the US: registered
+     * 1952, would have required renewal in 1980, and no renewal was found
+     * in the US Copyright Office database (per sacred-texts.com's own
+     * copyright research, which is where this was vendored from via a
+     * Wayback Machine mirror — the live site is behind a Cloudflare
+     * bot-challenge that blocks curl/WebFetch). `pyramid-texts.json`, 700
+     * of 714 Utterances (a few numbering gaps in the source pages), ref
+     * `The Pyramid Texts (Mercer, 1952), Utterance N`.
+     */
+    {
+      id: 'pyramid-texts',
+      label: 'The Pyramid Texts (Mercer, 1952)',
+      tradition: 'Egyptian Occultism',
+      license: 'Public domain — Samuel A. B. Mercer, trans. (1952); copyright not renewed',
+      urls: ['./pyramid-texts.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * 2. The Book of the Dead — E. A. Wallis Budge's 1895 translation of
+     * the Papyrus of Ani (British Museum), the most famous single Book of
+     * the Dead manuscript. Public domain, vendored from a clean HTML
+     * transcription (sacred-texts.com, via Wayback Machine mirror — same
+     * Cloudflare situation as above) rather than an OCR scan. Limited to
+     * the actual translated Plates (I-XXXVII, the spells/chapters
+     * themselves); Budge's lengthy introductory essays (Legend of Osiris,
+     * Doctrine of Eternal Life, etc.) are excluded as out of scope, the
+     * same principle applied to Pistis Sophia's introduction. `book-of-
+     * the-dead.json`, 121 rows, ref `The Book of the Dead (Budge, 1895),
+     * Plate <roman>[, Ch. N | , para. N]`.
+     */
+    {
+      id: 'book-of-the-dead',
+      label: 'The Book of the Dead (Budge, 1895)',
+      tradition: 'Egyptian Occultism',
+      license: 'Public domain — E. A. Wallis Budge, trans., The Papyrus of Ani (1895)',
+      urls: ['./book-of-the-dead.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * 3. The Demotic Magical Papyrus of London and Leiden — a 2nd/3rd-
+     * century AD Egyptian magical handbook (divination, healing, and
+     * binding spells), edited and translated by F. Ll. Griffith and
+     * Herbert Thompson (1904-1909), public domain. Vendored from a clean
+     * HTML transcription (sacred-texts.com via Wayback Machine). One row
+     * per papyrus column (recto Col. I-XXIX, verso Col. I-XXXIII),
+     * `demotic-magical-papyrus.json`, 62 rows, ref `The Demotic Magical
+     * Papyrus of London and Leiden (Griffith & Thompson, 1904-1909),
+     * [Verso] Col. <roman>`.
+     */
+    {
+      id: 'demotic-magical-papyrus',
+      label: 'Demotic Magical Papyrus of London and Leiden',
+      tradition: 'Egyptian Occultism',
+      license: 'Public domain — F. Ll. Griffith & Herbert Thompson, eds./trans. (1904-1909)',
+      urls: ['./demotic-magical-papyrus.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * 4. The Greek Magical Papyri (PGM) — the modern comprehensive
+     * collection (Betz, 1986) was literally the first-ever complete
+     * English translation, so no full PGM corpus is public domain. What
+     * IS public domain: Charles Wycliffe Goodwin's 1852 translation of one
+     * specific papyrus (British Museum Papyrus XLVI Greek, part of the
+     * Anastasi collection) — edited for the Cambridge Antiquarian Society,
+     * "Fragment of a Graeco-Egyptian Work upon Magic." This represents ONE
+     * papyrus, not the full PGM corpus — labeled accordingly everywhere it
+     * appears. Vendored from an archive.org OCR scan of the original 1852
+     * Cambridge edition, which interleaves each spell's untranslated Greek
+     * original with Goodwin's English translation; only the English
+     * translation halves were kept (the Greek OCR'd as unreadable
+     * transliteration noise) and hand-verified, 7 of the ~17 original
+     * spells recovered cleanly enough to vendor. `goodwin-pgm.json`, ref
+     * `Fragment of a Graeco-Egyptian Work upon Magic (Goodwin, 1852),
+     * Spell N`.
+     */
+    {
+      id: 'goodwin-pgm',
+      label: 'Graeco-Egyptian Magic Papyrus (Goodwin, 1852)',
+      tradition: 'Egyptian Occultism',
+      license: 'Public domain — Charles Wycliffe Goodwin, trans. (1852); one papyrus, not the full PGM corpus',
+      urls: ['./goodwin-pgm.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * 5. Egyptian Magic — E. A. Wallis Budge's 1899 survey of Egyptian
+     * magical practice (amulets, names of power, magical figures,
+     * ceremonies, and the worship of animals), public domain. Vendored
+     * from an archive.org OCR scan (Google Books mirror) — noisier than
+     * the Gutenberg/sacred-texts-HTML sources above, comparable to the
+     * Yoruba Religion/Vodou tier; residual OCR noise and interleaved
+     * footnotes remain in the running text. Chapter headings did not OCR
+     * cleanly enough to recover reliably, so this is vendored as a flat
+     * paragraph sequence rather than chapter-grouped. `egyptian-magic
+     * .json`, 425 rows, ref `Egyptian Magic (Budge, 1899), para. N`.
+     */
+    {
+      id: 'egyptian-magic',
+      label: 'Egyptian Magic (Budge, 1899)',
+      tradition: 'Egyptian Occultism',
+      license: 'Public domain — E. A. Wallis Budge (1899)',
+      urls: ['./egyptian-magic.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
+     * Vodou (Haitian) — unlike Yoruba Religion or Santería, no reliable
+     * public-domain source text exists for this tradition. Every pre-1930
+     * PD English account (Spenser St. John 1884, Hesketh Prichard 1900,
+     * this book) is considered sensationalized/fabricated by scholarly
+     * consensus — St. John's is literally the origin of the "voodoo
+     * cannibalism" myth — and the trustworthy 20th-century corrective
+     * accounts (Herskovits 1937, Hurston's Tell My Horse 1938) are both
+     * still under copyright (Hurston confirmed via renewal record through
+     * 2034; Herskovits still actively in print via a licensed reprint
+     * house). Seabrook's The Magic Island (1929) is used here as the only
+     * available PD option, curated: limited to Part One, "The Voodoo
+     * Rites" (Foreword through Ch. VI, "The God Incarnate") — the
+     * first-person, descriptive-ceremony chapters — while explicitly
+     * excluding all of Part Two, "Black Sorcery" (the zombie-mythology
+     * chapters that are this book's most notorious fabrications). Even
+     * within the kept chapters, this is a sensationalized white outsider's
+     * 1929 travel memoir, not the tradition's own voice and not verified
+     * doctrine — treat every quote from it as "according to this account,"
+     * the same caveat already applied to Yoruba Religion and Skull and
+     * Bones. Vendored from an OCR scan (archive.org djvu text); noisier
+     * than most sources here, with residual line-hyphenation and
+     * character-level OCR noise, and illustration-caption fragments
+     * filtered out algorithmically on a best-effort basis.
+     */
+    {
+      id: 'vodou',
+      label: 'The Magic Island (Seabrook, 1929)',
+      tradition: 'Vodou',
+      license: 'Public domain — William Seabrook, The Magic Island (1929); a sensationalized outsider’s memoir, not an authoritative or verified Vodou source',
+      urls: ['./vodoo.json'],
       parse: (data) => Array.isArray(data)
         ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
         : []
@@ -2960,12 +4082,28 @@
     { key: 'trent-canons', label: 'Council of Trent — Canons', tradition: 'Catholicism' },
     { key: 'rerum-novarum', label: 'Rerum Novarum (1891)', tradition: 'Catholicism' },
     { key: 'ineffabilis-deus', label: 'Ineffabilis Deus (1854)', tradition: 'Catholicism' },
-    { key: 'summa-theologica', label: 'Summa Theologica', tradition: 'Catholicism' }
+    { key: 'summa-theologica', label: 'Summa Theologica', tradition: 'Catholicism' },
+    { key: 'yasna', label: 'The Yasna', tradition: 'Zoroastrianism' },
+    { key: 'key-to-theosophy', label: 'The Key to Theosophy', tradition: 'Theosophy' },
+    { key: 'secret-doctrine', label: 'The Secret Doctrine', tradition: 'Theosophy' },
+    { key: 'book-of-the-law', label: 'The Book of the Law', tradition: 'Thelema' },
+    { key: 'pistis-sophia', label: 'Pistis Sophia (Horner, 1924)', tradition: 'Gnosticism' },
+    { key: 'corpus-hermeticum', label: 'Corpus Hermeticum (Mead, 1906)', tradition: 'Gnosticism' },
+    { key: 'setna-magic-book', label: 'Setna and the Magic Book (Petrie, 1895)', tradition: 'Gnosticism' },
+    { key: 'pyramid-texts', label: 'The Pyramid Texts (Mercer, 1952)', tradition: 'Egyptian Occultism' },
+    { key: 'book-of-the-dead', label: 'The Book of the Dead (Budge, 1895)', tradition: 'Egyptian Occultism' },
+    { key: 'demotic-magical-papyrus', label: 'Demotic Magical Papyrus of London and Leiden', tradition: 'Egyptian Occultism' },
+    { key: 'goodwin-pgm', label: 'Graeco-Egyptian Magic Papyrus (Goodwin, 1852)', tradition: 'Egyptian Occultism' },
+    { key: 'egyptian-magic', label: 'Egyptian Magic (Budge, 1899)', tradition: 'Egyptian Occultism' },
+    { key: 'kybalion', label: 'The Kybalion', tradition: 'Gnosticism' },
+    { key: 'emerald-tablet', label: 'The Emerald Tablet', tradition: 'Gnosticism' },
+    { key: 'yoruba-religion', label: 'Yoruba Religion (Ellis, 1894)', tradition: 'Yoruba Religion' },
+    { key: 'vodou', label: 'The Magic Island (Seabrook, 1929)', tradition: 'Vodou' }
   ];
 
   // Display order for the religion picker — READ_SOURCES insertion order
   // already follows this, but keep it explicit in case entries get reordered.
-  const READ_RELIGION_ORDER = ['Christianity', 'Catholicism', 'Apocrypha', 'Islam', 'Hinduism', 'Buddhism'];
+  const READ_RELIGION_ORDER = ['Christianity', 'Catholicism', 'Apocrypha', 'Islam', 'Hinduism', 'Buddhism', 'Zoroastrianism', 'Theosophy', 'Thelema', 'Gnosticism', 'Egyptian Occultism', 'Yoruba Religion', 'Vodou'];
 
   // Canonical KJV reading order — BIBLE_BOOKS (declared earlier, for CDN
   // fetch filenames) is alphabetical, which would list books completely out
@@ -3185,6 +4323,165 @@
         chapter: bookIdx === -1 ? 999 : bookIdx,
         verse: parseInt(m[2], 10) * 1000 + parseInt(m[3], 10)
       };
+    }
+    if (sourceKey === 'kybalion') {
+      const m = ref.match(/^The Kybalion, Ch\. (\d+), para\. (\d+)$/);
+      if (!m) return null;
+      const KYBALION_CHAPTER_TITLES = [
+        '', 'The Hermetic Philosophy', 'The Seven Hermetic Principles',
+        'Mental Transmutation', 'The All', 'The Mental Universe',
+        'The Divine Paradox', '"The All" in All', 'Planes of Correspondence',
+        'Vibration', 'Polarity', 'Rhythm', 'Causation', 'Gender',
+        'Mental Gender', 'Hermetic Axioms'
+      ];
+      const n = parseInt(m[1], 10);
+      return { group: `Ch. ${n}: ${KYBALION_CHAPTER_TITLES[n] || ''}`, chapter: n, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'emerald-tablet') {
+      const m = ref.match(/^Emerald Tablet, v\. (\d+)$/);
+      if (!m) return null;
+      return { group: 'Emerald Tablet', chapter: 1, verse: parseInt(m[1], 10) };
+    }
+    if (sourceKey === 'yasna') {
+      const m = ref.match(/^Yasna (\d+)\.[\d-]+$/);
+      if (!m) return null;
+      const YASNA_CHAPTER_TITLES = {
+        0: 'Introduction', 3: 'The Objects of Propitiation', 4: 'The Offering Takes Place',
+        6: 'The Sacrifice Continues', 7: 'Presentation of Offerings', 8: 'The Meat-Offering',
+        11: 'Prelude to the Haoma-Offering', 14: 'Dedications', 15: 'The Sacrifice Continues',
+        16: 'The Sacrifice Continues', 17: 'To the Fires, Waters, Plants', 19: 'Commentary on the Ahunwar',
+        20: 'Commentary on the Ashem Vohu', 21: 'Commentary on the Yenhe Hatam', 22: 'The Sacrifice Continues',
+        23: 'The Fravashis of the Saints', 24: 'Presentations', 26: 'The Fravashis: Sacrifice and Praise',
+        27: 'Prelude to the Chief Recital of the Ahunwar', 35: 'Praise to Ahura and the Immortals',
+        36: 'To Ahura and the Fire', 37: 'To Ahura, the Holy Creation, and the Fravashis',
+        38: 'To the Earth and the Sacred Waters', 39: 'To the Soul of the Kine', 40: 'Prayers for Helpers',
+        41: 'A Prayer to Ahura as King, Life, and Rewarder', 42: 'A Supplement to the Haptanghaiti',
+        52: 'A Prayer for Sanctity and its Benefits', 54: 'The Airyema-Ishyo',
+        55: 'The Worship of the Gathas Concluded', 56: 'Introduction to the Srosh Yasht',
+        57: 'The Srosh Yasht', 58: 'The Fshusho Mathra', 59: 'Mutual Blessings',
+        60: 'Prayers for the Dwelling of the Sacrificer', 62: 'To the Fire',
+        65: 'To Ardvi Sura Anahita, and the Waters', 66: 'To the Ahurian One',
+        68: 'To the Ahurian One, and the Waters', 70: 'To the Bountiful Immortals',
+        71: 'The Yasna Concluding'
+      };
+      const n = parseInt(m[1], 10);
+      const title = YASNA_CHAPTER_TITLES[n];
+      return { group: `Yasna ${n}${title ? ': ' + title : ''}`, chapter: n, verse: parseFloat(ref.match(/\.(\d+)/)[1]) };
+    }
+    if (sourceKey === 'key-to-theosophy') {
+      const m = ref.match(/^The Key to Theosophy, Section (\d+), para\. (\d+)$/);
+      if (!m) return null;
+      const n = parseInt(m[1], 10);
+      return { group: `Section ${n}`, chapter: n, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'secret-doctrine') {
+      const m = ref.match(/^The Secret Doctrine, (Cosmogenesis|Anthropogenesis), (Proem|Part I|Part II|Part III), para\. (\d+)$/);
+      if (!m) return null;
+      const VOL_ORDER = { Cosmogenesis: 0, Anthropogenesis: 1 };
+      const PART_ORDER = { Proem: 0, 'Part I': 1, 'Part II': 2, 'Part III': 3 };
+      return {
+        group: `${m[1]} — ${m[2]}`,
+        chapter: VOL_ORDER[m[1]] * 10 + PART_ORDER[m[2]],
+        verse: parseInt(m[3], 10)
+      };
+    }
+    if (sourceKey === 'book-of-the-law') {
+      const m = ref.match(/^The Book of the Law, ([IVX]+):(\d+)$/);
+      if (!m) return null;
+      const CHAPTER_ORDER = { I: 1, II: 2, III: 3 };
+      return { group: `Chapter ${m[1]}`, chapter: CHAPTER_ORDER[m[1]] || 999, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'pistis-sophia') {
+      const m = ref.match(/^Pistis Sophia \(Horner, 1924\), (First|Second|Third|Fourth|Fifth) Document, para\. (\d+)$/);
+      if (!m) return null;
+      const DOC_ORDER = { First: 1, Second: 2, Third: 3, Fourth: 4, Fifth: 5 };
+      return { group: `${m[1]} Document`, chapter: DOC_ORDER[m[1]], verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'corpus-hermeticum') {
+      const m = ref.match(/^Corpus Hermeticum \(Mead, 1906\), Libellus ([IVX]+), (\d+)$/);
+      if (!m) return null;
+      const LIBELLUS_ORDER = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, XI: 11, XII: 12, XIII: 13 };
+      return { group: `Libellus ${m[1]}`, chapter: LIBELLUS_ORDER[m[1]] || 999, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'setna-magic-book') {
+      const m = ref.match(/^Setna and the Magic Book \(Petrie, 1895\), para\. (\d+)$/);
+      if (!m) return null;
+      return { group: 'Setna and the Magic Book', chapter: 1, verse: parseInt(m[1], 10) };
+    }
+    if (sourceKey === 'pyramid-texts') {
+      const m = ref.match(/^The Pyramid Texts \(Mercer, 1952\), Utterance (\d+)$/);
+      if (!m) return null;
+      const n = parseInt(m[1], 10);
+      const start = Math.floor((n - 1) / 50) * 50 + 1;
+      return { group: `Utterances ${start}–${start + 49}`, chapter: start, verse: n };
+    }
+    if (sourceKey === 'book-of-the-dead') {
+      const m = ref.match(/^The Book of the Dead \(Budge, 1895\), Plates? ([IVXL]+(?:-[IVXL]+)?)(?:, (?:Ch\. (\S+)|para\. (\d+)))?$/);
+      if (!m) return null;
+      // Roman-numeral-ish sort key: strip non-letters, use first numeral's
+      // rough magnitude via string length + value is overkill here — plate
+      // order in the source is already monotonic, so just use first-seen
+      // order via a lookup built from PLATE_ORDER below.
+      const PLATE_ORDER = {
+        'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V-VI': 5, 'VII-X': 6, 'XI-XII': 7,
+        'XIII': 8, 'XIV': 9, 'XV': 10, 'XVI': 11, 'XVII': 12, 'XVIII': 13,
+        'XIX': 14, 'XX': 15, 'XXI': 16, 'XXII': 17, 'XXIII-XXIV': 18, 'XXV': 19,
+        'XXVI': 20, 'XXVII': 21, 'XXVIII': 22, 'XXIX-XXX': 23, 'XXXI-XXXII': 24,
+        'XXXII': 25, 'XXXIII': 26, 'XXXIII-XXXIV': 27, 'XXXV-XXXVI': 28, 'XXXVII': 29
+      };
+      const plate = m[1];
+      const label = plate.includes('-') ? `Plates ${plate}` : `Plate ${plate}`;
+      return { group: label, chapter: PLATE_ORDER[plate] || 999, verse: parseInt(m[3], 10) || 0 };
+    }
+    if (sourceKey === 'demotic-magical-papyrus') {
+      const m = ref.match(/^The Demotic Magical Papyrus of London and Leiden \(Griffith & Thompson, 1904-1909\), (Verso )?Col\. ([IVXL]+)$/);
+      if (!m) return null;
+      const ROMAN_ORDER = { I:1,II:2,III:3,IV:4,V:5,VI:6,VII:7,VIII:8,IX:9,X:10,XI:11,XII:12,XIII:13,XIV:14,XV:15,XVI:16,XVII:17,XVIII:18,XIX:19,XX:20,XXI:21,XXII:22,XXIII:23,XXIV:24,XXV:25,XXVI:26,XXVII:27,XXVIII:28,XXIX:29,XXX:30,XXXI:31,XXXII:32,XXXIII:33 };
+      const isVerso = !!m[1];
+      return { group: isVerso ? 'Verso' : 'Recto', chapter: isVerso ? 1 : 0, verse: ROMAN_ORDER[m[2]] || 999 };
+    }
+    if (sourceKey === 'goodwin-pgm') {
+      const m = ref.match(/^Fragment of a Graeco-Egyptian Work upon Magic \(Goodwin, 1852\), Spell (\d+)$/);
+      if (!m) return null;
+      return { group: 'Spells', chapter: 1, verse: parseInt(m[1], 10) };
+    }
+    if (sourceKey === 'egyptian-magic') {
+      const m = ref.match(/^Egyptian Magic \(Budge, 1899\), para\. (\d+)$/);
+      if (!m) return null;
+      const n = parseInt(m[1], 10);
+      const start = Math.floor((n - 1) / 50) * 50 + 1;
+      return { group: `¶${start}–${start + 49}`, chapter: start, verse: n };
+    }
+    if (sourceKey === 'yoruba-religion') {
+      const m = ref.match(/^Yoruba Religion \(Ellis, 1894\), Ch\. ([IVX]+), para\. (\d+)$/);
+      if (!m) return null;
+      const CHAPTER_TITLES = {
+        II: 'Chief Gods', III: 'Minor Gods', V: 'Priests and Worship',
+        VI: 'Egungun, Oro, Abiku, and Various Superstitions',
+        VII: 'The Indwelling Spirits and Souls of Men',
+        IX: 'Ceremonies at Birth, Marriage, and Death',
+        XIV: 'Folk-Lore Tales'
+      };
+      const CHAPTER_ORDER = { II: 2, III: 3, V: 5, VI: 6, VII: 7, IX: 9, XIV: 14 };
+      const title = CHAPTER_TITLES[m[1]];
+      return { group: `Ch. ${m[1]}${title ? ': ' + title : ''}`, chapter: CHAPTER_ORDER[m[1]] || 999, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'vodou') {
+      const m = ref.match(/^The Magic Island \(Seabrook, 1929\), (Foreword|Ch\. [IVX]+), para\. (\d+)$/);
+      if (!m) return null;
+      const CHAPTER_TITLES = {
+        'Foreword': 'Foreword', 'Ch. I': 'Secret Fires',
+        'Ch. II': 'The Way Is Opened and Closed', 'Ch. III': 'The Petro Sacrifice',
+        'Ch. IV': 'The "Ouanga" Charm', 'Ch. V': 'Goat-Cry Girl-Cry',
+        'Ch. VI': 'The God Incarnate'
+      };
+      const CHAPTER_ORDER = {
+        'Foreword': 0, 'Ch. I': 1, 'Ch. II': 2, 'Ch. III': 3,
+        'Ch. IV': 4, 'Ch. V': 5, 'Ch. VI': 6
+      };
+      const title = CHAPTER_TITLES[m[1]];
+      const group = m[1] === 'Foreword' ? 'Foreword' : `${m[1]}${title ? ': ' + title : ''}`;
+      return { group, chapter: CHAPTER_ORDER[m[1]] ?? 999, verse: parseInt(m[2], 10) };
     }
     if (sourceKey === 'baltimore-catechism') {
       const m = ref.match(/Q\.\s*(\d+)/);
