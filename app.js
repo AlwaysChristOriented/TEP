@@ -1136,6 +1136,66 @@
       ]
     },
     {
+      claim: "An unseen power flows down from the heavens and pervades the whole earth, physically altering the elements, plants, and animals according to the motions of the stars",
+      religion: "Astrology",
+      keywords: ["tetrabiblos aethereal power pervades earth", "ptolemy celestial power nature", "astrology stars physical influence"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book I, Ch. 2, para. 1", text: "That a certain power, derived from the æthereal nature, is diffused over and pervades the whole atmosphere of the earth, is clearly evident to all men. Fire and air, the first of the sublunary elements, are encompassed and altered by the motions of the æther. These elements in their turn encompass all inferior matter, and vary it as they themselves are varied; acting on earth and water, on plants and animals." },
+      note: "Opens the second chapter of Ptolemy's Tetrabiblos ('Knowledge May Be Acquired by Astronomy to a Certain Extent') — the founding claim of the entire text: the heavens act as a real physical cause reaching down into earthly life.",
+      verses: [
+        { ref: "Jeremiah 10:2", text: "Thus saith the LORD, Learn not the way of the heathen, and be not dismayed at the signs of heaven; for the heathen are dismayed at them." },
+        { ref: "Deuteronomy 4:19", text: "And lest thou lift up thine eyes unto heaven, and when thou seest the sun, and the moon, and the stars, even all the host of heaven, shouldest be driven to worship them, and serve them, which the LORD thy God hath divided unto all nations under the whole heaven." }
+      ]
+    },
+    {
+      claim: "The Sun, Moon, and planets are physical causes that 'dispose' the character and constitution of everything beneath them, each according to its own inherent nature",
+      religion: "Astrology",
+      keywords: ["tetrabiblos influences of planetary orbs", "sun disposes inhabitants nature", "astrology planets cause character"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book I, Ch. 4, para. 1", text: "The Sun is found to produce heat and moderate dryness. His magnitude, and the changes which he so evidently makes in the seasons, render his power more plainly perceptible than that of the other heavenly bodies; since his approach to the zenith of any part of the earth creates a greater degree of heat in that part and proportionately disposes its inhabitants after his own nature." },
+      note: "From the chapter 'The Influences of the Planetary Orbs,' which assigns each planet its own causal power (heat, cold, moisture, dryness) that shapes the nature of whatever falls under it.",
+      verses: [
+        { ref: "Job 38:31", text: "Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion?" },
+        { ref: "Job 38:33", text: "Knowest thou the ordinances of heaven? canst thou set the dominion thereof in the earth?" }
+      ]
+    },
+    {
+      claim: "Eclipses of the Sun and Moon are 'the strongest and principal cause' determining the fate of cities, countries, and kings",
+      religion: "Astrology",
+      keywords: ["tetrabiblos eclipses cause nations", "astrology eclipse predicts kings", "ptolemy conjunctions cities countries"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book II, Ch. 5, para. 2", text: "The strongest and principal cause of all these events exists in the ecliptical conjunctions of the Sun and Moon, and in the several transits made by the planets during those conjunctions." },
+      note: "Opens Ptolemy's method for 'mundane' astrology — predicting the fortunes of nations and rulers, rather than individuals, from the location and timing of eclipses.",
+      verses: [
+        { ref: "Isaiah 47:13-14", text: "Thou art wearied in the multitude of thy counsels. Let now the astrologers, the stargazers, the monthly prognosticators, stand up, and save thee from these things that shall come upon thee. Behold, they shall be as stubble; the fire shall burn them; they shall not deliver themselves from the power of the flame." }
+      ]
+    },
+    {
+      claim: "The length of a person's life is the most essential thing to determine from a birth chart, and can be computed in advance from the horoscope's 'prorogatory places'",
+      religion: "Astrology",
+      keywords: ["tetrabiblos duration of life", "astrology predicts lifespan birth chart", "ptolemy prorogators death"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book III, Ch. 11, para. 1", text: "Of all events whatsoever, which take place after birth, the most essential is the continuance of life... the inquiry into the duration of life consequently takes precedence of all other questions, as to the events subsequent to the birth." },
+      verses: [
+        { ref: "Psalm 139:16", text: "Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them." },
+        { ref: "Job 14:5", text: "Seeing his days are determined, the number of his months are with thee, thou hast appointed his bounds that he cannot pass;" }
+      ]
+    },
+    {
+      claim: "The exact manner and cause of a person's death — down to the specific diseases — is fixed in advance by whichever planet holds 'dominion' over it at birth",
+      religion: "Astrology",
+      keywords: ["tetrabiblos kind of death planet", "saturn diseases death astrology", "ptolemy dominion of death"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book IV, Ch. 9, para. 2", text: "Thus, for example, if the dominion of death be vested in Saturn, he will produce death by means of lingering diseases; cough, rheumatism, flux, ague, disorder of the spleen, dropsy, colic, and complaints in the womb; and, in short, by all such diseases as proceed from the superabundance of cold." },
+      verses: [
+        { ref: "James 4:13-15", text: "Go to now, ye that say, To day or to morrow we will go into such a city... whereas ye know not what shall be on the morrow. For what is your life? It is even a vapour, that appeareth for a little time, and then vanisheth away. For that ye ought to say, If the Lord will, we shall live, and do this, or that." }
+      ]
+    },
+    {
+      claim: "Whether, when, and how many times a man will marry — and even his future wife's temperament — is fixed in advance by the Moon's position and aspects at his birth",
+      religion: "Astrology",
+      keywords: ["tetrabiblos marriage moon position", "astrology predicts wife character", "ptolemy nativities marriage"],
+      sourceQuote: { ref: "Ptolemy's Tetrabiblos (Ashmand, 1822), Book IV, Ch. 5, para. 2", text: "With regard to men, it is to be observed in what manner the Moon may be disposed; for, in the first place, if she be found in the oriental quadrants, she will cause men either to marry early in life, or, after having over-passed their prime, to marry young women... and if she be found under the Sun's beams, and configurated with Saturn, she then entirely denies marriage." },
+      verses: [
+        { ref: "Proverbs 19:21", text: "There are many devices in a man's heart; nevertheless the counsel of the LORD, that shall stand." }
+      ]
+    },
+    {
       claim: "Souls are purified in Purgatory after death before entering heaven",
       religion: "Catholicism",
       keywords: ["purgatory", "catholic purgatory doctrine", "temporal punishment after death", "purified after death"],
@@ -3176,6 +3236,33 @@
         : []
     },
     /*
+     * Astrology — its own new top-level sidebar group ("Occultism"),
+     * separate from Egyptian Occultism (which is specifically ancient
+     * Egyptian funerary/magical texts). Source: Ptolemy's Tetrabiblos
+     * ("Four Books"), the single most influential text in the history of
+     * Western astrology — 2nd-century AD Alexandria, still the foundation
+     * of natal/horoscopic astrology today. J. M. Ashmand's 1822 English
+     * translation, safely public domain (pre-1923 bright-line rule),
+     * vendored directly from Project Gutenberg ebook #70850 (a clean HTML
+     * transcription, not an OCR scan). `tetrabiblos.json`, 480 rows across
+     * all 70 chapters of Books I-IV, ref `Ptolemy's Tetrabiblos (Ashmand,
+     * 1822), Book <roman>, Ch. N, para. M`. Excludes the front-matter
+     * Preface and the back-matter Appendix (extracts from Ptolemy's
+     * separate Almagest, not the Tetrabiblos itself) — same in/out-of-scope
+     * principle applied to Pistis Sophia's introduction and Setna's
+     * "Remarks".
+     */
+    {
+      id: 'tetrabiblos',
+      label: "Ptolemy's Tetrabiblos (Ashmand, 1822)",
+      tradition: 'Astrology',
+      license: 'Public domain — J. M. Ashmand, trans., Ptolemy’s Tetrabiblos (1822)',
+      urls: ['./tetrabiblos.json'],
+      parse: (data) => Array.isArray(data)
+        ? data.map((row) => ({ ref: row.ref, text: stripHtml(row.text) }))
+        : []
+    },
+    /*
      * The Summa Theologica (St. Thomas Aquinas, 13th c.) — the single most
      * influential work of Catholic systematic theology, and public domain
      * (Fathers of the English Dominican Province translation, 1920, via
@@ -4098,12 +4185,13 @@
     { key: 'kybalion', label: 'The Kybalion', tradition: 'Gnosticism' },
     { key: 'emerald-tablet', label: 'The Emerald Tablet', tradition: 'Gnosticism' },
     { key: 'yoruba-religion', label: 'Yoruba Religion (Ellis, 1894)', tradition: 'Yoruba Religion' },
-    { key: 'vodou', label: 'The Magic Island (Seabrook, 1929)', tradition: 'Vodou' }
+    { key: 'vodou', label: 'The Magic Island (Seabrook, 1929)', tradition: 'Vodou' },
+    { key: 'tetrabiblos', label: "Ptolemy's Tetrabiblos (Ashmand, 1822)", tradition: 'Astrology' }
   ];
 
   // Display order for the religion picker — READ_SOURCES insertion order
   // already follows this, but keep it explicit in case entries get reordered.
-  const READ_RELIGION_ORDER = ['Christianity', 'Catholicism', 'Apocrypha', 'Islam', 'Hinduism', 'Buddhism', 'Zoroastrianism', 'Theosophy', 'Thelema', 'Gnosticism', 'Egyptian Occultism', 'Yoruba Religion', 'Vodou'];
+  const READ_RELIGION_ORDER = ['Christianity', 'Catholicism', 'Apocrypha', 'Islam', 'Hinduism', 'Buddhism', 'Zoroastrianism', 'Theosophy', 'Thelema', 'Gnosticism', 'Egyptian Occultism', 'Yoruba Religion', 'Vodou', 'Astrology'];
 
   // Canonical KJV reading order — BIBLE_BOOKS (declared earlier, for CDN
   // fetch filenames) is alphabetical, which would list books completely out
@@ -4482,6 +4570,21 @@
       const title = CHAPTER_TITLES[m[1]];
       const group = m[1] === 'Foreword' ? 'Foreword' : `${m[1]}${title ? ': ' + title : ''}`;
       return { group, chapter: CHAPTER_ORDER[m[1]] ?? 999, verse: parseInt(m[2], 10) };
+    }
+    if (sourceKey === 'tetrabiblos') {
+      const m = ref.match(/^Ptolemy's Tetrabiblos \(Ashmand, 1822\), Book ([IVX]+), Ch\. (\d+), para\. (\d+)$/);
+      if (!m) return null;
+      const TETRABIBLOS_CHAPTER_TITLES = {
+        I: ['', 'Proem', 'Knowledge May Be Acquired by Astronomy to a Certain Extent', 'That Prescience is Useful', 'The Influences of the Planetary Orbs', 'Benefics and Malefics', 'Masculine and Feminine', 'Diurnal and Nocturnal', 'The Influence of Position with Regard to the Sun', 'The Influence of the Fixed Stars', 'Constellations North of the Zodiac', 'Constellations South of the Zodiac', 'The Annual Seasons', 'The Influence of the Four Angles', 'Tropical, Equinoctial, Fixed, and Bicorporeal Signs', 'Masculine and Feminine Signs', 'Mutual Configurations of the Signs', 'Signs Commanding and Obeying', 'Signs Beholding Each Other, and of Equal Power', 'Signs Inconjunct', 'Houses of the Planets', 'The Triplicities', 'Exaltations', 'The Disposition of the Terms', 'The Terms According to Ptolemy', 'The Places and Degrees of Every Planet', 'Faces, Chariots, and Other Similar Attributes of the Planets', 'Application, Separation, and Other Faculties'],
+        II: ['', 'General Division of the Subject', 'Peculiarities Observable Throughout Every Entire Climate', 'The Familiarity of the Regions of the Earth with the Triplicities and the Planets', 'The Familiarity of the Regions of the Earth with the Fixed Stars', 'Mode of Particular Prediction in Eclipses', 'The Regions or Countries to Be Considered as Liable to Be Comprehended in the Event', 'The Time and Period of the Event', 'The Genus, Class, or Kind, Liable to Be Affected', 'The Quality and Nature of the Effect', 'Colours in Eclipses; Comets, and Similar Phenomena', 'The New Moon of the Year', 'The Particular Natures of the Signs by Which the Different Constitutions of the Atmosphere Are Produced', 'Mode of Consideration for Particular Constitutions of the Atmosphere', 'The Signification of Meteors'],
+        III: ['', 'Proem', 'The Conception and the Parturition, or Birth', 'The Degree Ascending', 'Distribution of the Doctrine of Nativities', 'The Parents', 'Brothers and Sisters', 'Male or Female', 'Twins', 'Monstrous or Defective Births', 'Children Not Reared', 'The Duration of Life', 'The Prorogatory Places', 'The Number of Prorogators, and Also the Part of Fortune', 'Number of the Modes of Prorogation', 'Exemplification', 'The Form and Temperament of the Body', 'The Hurts, Injuries, and Diseases of the Body', 'The Quality of the Mind', 'The Diseases of the Mind'],
+        IV: ['', 'Proem', 'The Fortune of Wealth', 'The Fortune of Rank', 'The Quality of Employment', 'Marriage', 'Children', 'Friends and Enemies', 'Travelling', 'The Kind of Death', 'The Periodical Divisions of Time']
+      };
+      const BOOK_ORDER = { I: 1, II: 2, III: 3, IV: 4 };
+      const book = m[1];
+      const n = parseInt(m[2], 10);
+      const title = (TETRABIBLOS_CHAPTER_TITLES[book] || [])[n];
+      return { group: `Book ${book}, Ch. ${n}${title ? ': ' + title : ''}`, chapter: (BOOK_ORDER[book] || 9) * 100 + n, verse: parseInt(m[3], 10) };
     }
     if (sourceKey === 'baltimore-catechism') {
       const m = ref.match(/Q\.\s*(\d+)/);
