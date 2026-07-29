@@ -48,6 +48,12 @@
   .brand .verse{
     font-family:'Spectral',serif;font-style:italic;font-size:14.5px;color:var(--ink-soft);
   }
+  .share-app-btn{
+    font-family:'Source Sans 3',sans-serif;font-size:12.5px;font-weight:600;
+    background:none;border:1px solid var(--ink-soft);border-radius:4px;cursor:pointer;
+    color:var(--ink-soft);padding:4px 9px;line-height:1;transform:translateY(-2px);
+  }
+  .share-app-btn:hover{color:var(--navy-deep);border-color:var(--navy-deep);}
   header p.sub{margin-top:10px;font-size:15.5px;color:var(--ink-soft);max-width:62ch;line-height:1.55;}
 
   .page-layout{
@@ -544,6 +550,7 @@
   <h3>Settings</h3>
   <button class="drawer-link" data-page="settings">Color & Theme</button>
   <button class="drawer-link" data-page="sources">Source Texts</button>
+  <button class="drawer-link" id="share-app-drawer">Share TEP</button>
   <h3>Support</h3>
   <button class="drawer-link" data-page="contact">Contact</button>
   <button class="drawer-link" data-page="legal">Privacy & Legal</button>
@@ -558,6 +565,7 @@
     <div class="brand">
       <h1>The Elijah Project</h1>
       <span class="verse-badge">TEP</span>
+      <button class="share-app-btn" id="share-app-home" title="Share The Elijah Project" aria-label="Share The Elijah Project">⇪ Share</button>
       <span class="verse">"How long halt ye between two opinions? if the LORD be God, follow him." — 1 Kings 18:21</span>
     </div>
     <p class="sub">A quick reference for real conversations. Type the claim or question you just heard — TEP shows you what that tradition actually teaches, with its own source, side by side with what Scripture says.</p>

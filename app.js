@@ -4975,6 +4975,31 @@
 
   /* ================= Share ================= */
 
+  // Copies both a plain-text fallback and a real <a href> HTML fragment, so
+  // pasting into a rich-text field (email, Slack, Docs, etc.) drops in an
+  // already-clickable link instead of a bare URL that only becomes tappable
+  // if the destination happens to auto-link plain text. Plain-text-only
+  // destinations (SMS, notes apps) still get the plain-text form.
+  async function copyShareText(text, url) {
+    const plain = `${text} ${url}`;
+    if (navigator.clipboard && typeof ClipboardItem !== 'undefined') {
+      try {
+        const html = `${escapeHtml(text)} <a href="${escapeHtml(url)}">${escapeHtml(url)}</a>`;
+        const item = new ClipboardItem({
+          'text/plain': new Blob([plain], { type: 'text/plain' }),
+          'text/html': new Blob([html], { type: 'text/html' })
+        });
+        await navigator.clipboard.write([item]);
+        showToast('Link copied');
+        return;
+      } catch (e) { /* fall through to plain-text copy below */ }
+    }
+    if (navigator.clipboard) {
+      await navigator.clipboard.writeText(plain);
+      showToast('Link copied');
+    }
+  }
+
   async function shareEntry(entry) {
     const shareData = {
       title: 'The Elijah Project',
@@ -4983,11 +5008,26 @@
     };
     if (navigator.share) {
       try { await navigator.share(shareData); } catch (e) { /* user cancelled */ }
-    } else if (navigator.clipboard) {
-      await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`);
-      showToast('Link copied');
+    } else {
+      await copyShareText(shareData.text, shareData.url);
     }
   }
+
+  async function shareApp() {
+    const shareData = {
+      title: 'The Elijah Project',
+      text: 'The Elijah Project (TEP) — a quick reference for real conversations. See what other traditions actually teach, side by side with what Scripture says.',
+      url: location.origin + location.pathname
+    };
+    if (navigator.share) {
+      try { await navigator.share(shareData); } catch (e) { /* user cancelled */ }
+    } else {
+      await copyShareText(shareData.text, shareData.url);
+    }
+  }
+
+  document.getElementById('share-app-home').addEventListener('click', () => shareApp());
+  document.getElementById('share-app-drawer').addEventListener('click', () => { closeDrawer(); shareApp(); });
 
   /* ================= Drawer navigation ================= */
 
