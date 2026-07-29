@@ -1705,6 +1705,123 @@
     return { words, query: words.join(' ') };
   }
 
+  // Curated "vague life question" -> best-verse-answer index. Unlike
+  // TOPIC_SYNONYMS above (a last-resort fallback for queries that find
+  // NOTHING), this applies on every render, on top of whatever the normal
+  // search already found — a question like "how do we get saved?" already
+  // fuzzy-matches plenty of verses just fine (the word "saved" is common),
+  // the actual gap is that generic fuzzy-match scoring has no way to know
+  // which of those hits is the real answer. A match here pins its verses to
+  // the very top of the Bible-results list, ahead of whatever the fuzzy
+  // ranking would have put there. Every ref below was checked against the
+  // live KJV text before being added (see tep_search_topic_synonyms memory
+  // for how). Curated and intentionally broad-but-finite — add more here as
+  // they come up rather than trying to cover every possible phrasing.
+  const TOPICAL_QUESTIONS = [
+    { terms: ["how do we get saved", "how can i be saved", "how to be saved", "am i saved", "how do i get saved", "plan of salvation", "how to get to heaven", "how can i get saved"],
+      verses: ["Romans 10:9", "Romans 10:13", "Ephesians 2:8", "Ephesians 2:9", "Acts 16:31", "John 3:16"] },
+    { terms: ["how do i pray", "how to pray", "how should i pray", "what should i pray for"],
+      verses: ["Matthew 6:9", "Philippians 4:6", "1 Thessalonians 5:17", "James 5:16"] },
+    { terms: ["how do i forgive", "how to forgive", "why should i forgive", "how can i forgive someone"],
+      verses: ["Matthew 6:14", "Matthew 6:15", "Ephesians 4:32", "Colossians 3:13", "Matthew 18:21", "Matthew 18:22"] },
+    { terms: ["why does god allow suffering", "why do bad things happen", "why is there evil", "why do we suffer", "why does god allow pain"],
+      verses: ["Romans 8:28", "John 16:33", "James 1:2", "James 1:3", "Romans 5:3", "Romans 5:4", "2 Corinthians 4:17"] },
+    { terms: ["what happens when we die", "what happens after death", "is there life after death", "what happens when you die"],
+      verses: ["John 11:25", "John 11:26", "2 Corinthians 5:8", "Philippians 1:21", "Hebrews 9:27", "Revelation 21:4"] },
+    { terms: ["how do i have faith", "i have doubts", "how to believe in god", "how do i believe"],
+      verses: ["Hebrews 11:1", "Mark 9:24", "Romans 10:17", "2 Corinthians 5:7"] },
+    { terms: ["what is the meaning of life", "what is my purpose", "why am i here", "what is the purpose of life"],
+      verses: ["Jeremiah 29:11", "Ecclesiastes 12:13", "Colossians 1:16", "Romans 8:28"] },
+    { terms: ["how do i stop worrying", "how to overcome fear", "why am i anxious", "how to deal with anxiety", "how to stop being afraid"],
+      verses: ["Philippians 4:6", "Philippians 4:7", "1 Peter 5:7", "Isaiah 41:10", "2 Timothy 1:7"] },
+    { terms: ["how do i deal with guilt", "how to overcome sin", "i feel guilty", "how do i stop sinning"],
+      verses: ["1 John 1:9", "Romans 8:1", "Psalms 103:12"] },
+    { terms: ["does god love me", "how much does god love me", "how do i know god loves me"],
+      verses: ["John 3:16", "Romans 5:8", "Romans 8:38", "Romans 8:39", "1 John 4:9", "1 John 4:10"] },
+    { terms: ["what does the bible say about marriage", "how should i treat my wife", "how should i treat my husband", "what makes a good marriage"],
+      verses: ["Ephesians 5:25", "Ephesians 5:22", "Genesis 2:24", "Colossians 3:19"] },
+    { terms: ["why do i feel alone", "how to deal with loneliness", "i feel lonely"],
+      verses: ["Deuteronomy 31:6", "Hebrews 13:5", "Psalms 34:18", "Matthew 28:20"] },
+    { terms: ["how do i control my anger", "how to stop being angry", "how to deal with anger"],
+      verses: ["Ephesians 4:26", "James 1:19", "James 1:20", "Proverbs 15:1", "Proverbs 29:11"] },
+    { terms: ["how do i trust god", "what does the future hold", "how do i trust god's plan"],
+      verses: ["Proverbs 3:5", "Proverbs 3:6", "Jeremiah 29:11", "Isaiah 41:10"] },
+    { terms: ["how do i resist temptation", "how to overcome temptation", "how do i say no to temptation"],
+      verses: ["1 Corinthians 10:13", "James 1:12", "James 4:7", "Matthew 26:41"] },
+    { terms: ["how do i repent", "what is repentance", "how to repent"],
+      verses: ["Acts 3:19", "2 Chronicles 7:14", "1 John 1:9", "Luke 15:7"] },
+    { terms: ["why should i be baptized", "what is baptism for", "why get baptized"],
+      verses: ["Acts 2:38", "Romans 6:4", "Matthew 28:19"] },
+    { terms: ["what is heaven like", "how do i get to heaven", "what will heaven be like"],
+      verses: ["John 14:2", "John 14:3", "Revelation 21:4", "Revelation 21:21", "John 3:16"] },
+    { terms: ["what is hell", "is hell real", "what is hell like"],
+      verses: ["Matthew 25:41", "Revelation 20:15", "Matthew 10:28"] },
+    { terms: ["who is the holy spirit", "what does the holy spirit do", "what is the holy spirit's role"],
+      verses: ["John 14:26", "Acts 1:8", "Romans 8:26", "Galatians 5:22", "Galatians 5:23"] },
+    { terms: ["why should i read the bible", "how do i understand the bible", "how to study the bible"],
+      verses: ["2 Timothy 3:16", "Psalms 119:105", "Hebrews 4:12", "Joshua 1:8"] },
+    { terms: ["how do i deal with grief", "how to cope with loss", "i lost a loved one"],
+      verses: ["Psalms 34:18", "Matthew 5:4", "Revelation 21:4", "2 Corinthians 1:3", "2 Corinthians 1:4"] },
+    { terms: ["how do i find peace", "how to have peace of mind", "how do i find inner peace"],
+      verses: ["John 14:27", "Philippians 4:7", "Isaiah 26:3"] },
+    { terms: ["what does the bible say about money", "should i tithe", "what does the bible say about tithing"],
+      verses: ["Matthew 6:24", "1 Timothy 6:10", "Malachi 3:10", "Proverbs 3:9", "Proverbs 3:10"] },
+    { terms: ["what does the bible say about work", "how should i work", "what does the bible say about my job"],
+      verses: ["Colossians 3:23", "Colossians 3:24", "Proverbs 14:23", "Ecclesiastes 3:13"] },
+    { terms: ["how should i raise my children", "what does the bible say about parenting", "how to raise godly children"],
+      verses: ["Proverbs 22:6", "Ephesians 6:4", "Deuteronomy 6:6", "Deuteronomy 6:7"] },
+    { terms: ["what does the bible say about friendship", "how to be a good friend"],
+      verses: ["Proverbs 17:17", "Proverbs 27:17", "John 15:13", "Ecclesiastes 4:9", "Ecclesiastes 4:10"] },
+    { terms: ["how do i stay humble", "why is pride bad", "how to overcome pride"],
+      verses: ["Proverbs 16:18", "James 4:6", "Philippians 2:3", "Micah 6:8"] },
+    { terms: ["how do i make good decisions", "how to get wisdom", "how do i know god's will"],
+      verses: ["James 1:5", "Proverbs 3:5", "Proverbs 3:6", "Proverbs 2:6"] },
+    { terms: ["when is jesus coming back", "what are the end times", "when will jesus return"],
+      verses: ["Matthew 24:36", "1 Thessalonians 4:16", "1 Thessalonians 4:17", "Revelation 22:12"] },
+    { terms: ["why go to church", "why is fellowship important", "why do i need church"],
+      verses: ["Hebrews 10:24", "Hebrews 10:25", "Matthew 18:20", "Acts 2:42"] },
+    { terms: ["how do i love my neighbor", "why should i serve others", "how to love others"],
+      verses: ["Mark 12:31", "Galatians 5:13", "1 Peter 4:10", "Matthew 25:40"] },
+    { terms: ["how do i be more patient", "how to have patience", "how to wait on god"],
+      verses: ["James 1:2", "James 1:3", "James 1:4", "Galatians 5:22", "Romans 5:3", "Romans 5:4"] },
+    { terms: ["how to be more thankful", "why should i be grateful", "how do i practice gratitude"],
+      verses: ["1 Thessalonians 5:18", "Philippians 4:6", "Psalms 100:4", "Colossians 3:15"] }
+  ];
+
+  // Pins a matched topic's verses to the top of the Bible-results list,
+  // ahead of whatever the normal fuzzy-match ranking produced (ranking is
+  // otherwise pure edit-distance — it has no idea "Romans 10:9" is a better
+  // answer to "how do we get saved" than some other verse that happens to
+  // contain the word "saved"). Runs on every render, not just the fallback
+  // phases, since the underlying search already succeeds fine for most of
+  // these questions — this only reorders, never gates on failure first.
+  function applyTopicalBoost(rawQuery, bibleResult) {
+    if (!rawQuery) return bibleResult;
+    const qNorm = normalizeText(rawQuery);
+    const boostRefs = [];
+    TOPICAL_QUESTIONS.forEach(topic => {
+      if (topic.terms.some(term => qNorm.includes(normalizeText(term)))) {
+        topic.verses.forEach(ref => { if (!boostRefs.includes(ref)) boostRefs.push(ref); });
+      }
+    });
+    if (boostRefs.length === 0) return bibleResult;
+
+    const boosted = boostRefs
+      .map(ref => allBibleVerses.find(v => v.ref === ref))
+      .filter(Boolean)
+      .map(item => ({ item, score: -1 }));
+    if (boosted.length === 0) return bibleResult;
+
+    const boostedRefs = new Set(boosted.map(b => b.item.ref));
+    const rest = bibleResult.top.filter(h => !boostedRefs.has(h.item.ref));
+    const newlyAdded = boosted.filter(b => !bibleResult.top.some(h => h.item.ref === b.item.ref)).length;
+
+    return {
+      total: bibleResult.total + newlyAdded,
+      top: [...boosted, ...rest].slice(0, MERGE_TOP_CAP)
+    };
+  }
+
   /* ===== Typo-tolerant word correction ===== */
 
   const EXTRA_VOCAB = [
@@ -2069,8 +2186,9 @@
   // confusing to show the user verbatim. Every other phase leaves this
   // unset and just shows `query` as before.
   function finalizeRender(rawQuery, query, corrected, allMatchedEntries, bibleResult, sourceResult, displayLabel) {
-    renderTopicOverview(query, allMatchedEntries, bibleResult.top);
-    renderBibleResults(query, bibleResult);
+    const boostedBible = applyTopicalBoost(rawQuery, bibleResult);
+    renderTopicOverview(query, allMatchedEntries, boostedBible.top);
+    renderBibleResults(query, boostedBible);
     renderSourceResults(query, sourceResult);
 
     const label = displayLabel || query;
