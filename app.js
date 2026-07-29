@@ -5209,12 +5209,17 @@
   // pasting into a rich-text field (email, Slack, Docs, etc.) drops in an
   // already-clickable link instead of a bare URL that only becomes tappable
   // if the destination happens to auto-link plain text. Plain-text-only
-  // destinations (SMS, notes apps) still get the plain-text form.
+  // destinations (SMS, notes apps) still get the plain-text form — the URL
+  // is put on its own line, isolated from the description, since a URL
+  // sitting alone on its own line is what every plain-text auto-linker
+  // (iMessage, WhatsApp, Android Messages, etc.) recognizes most reliably;
+  // one buried inline after a full sentence is a common reason those
+  // linkers miss it.
   async function copyShareText(text, url) {
-    const plain = `${text} ${url}`;
+    const plain = `${text}\n\n${url}`;
     if (navigator.clipboard && typeof ClipboardItem !== 'undefined') {
       try {
-        const html = `${escapeHtml(text)} <a href="${escapeHtml(url)}">${escapeHtml(url)}</a>`;
+        const html = `${escapeHtml(text)}<br><br><a href="${escapeHtml(url)}">${escapeHtml(url)}</a>`;
         const item = new ClipboardItem({
           'text/plain': new Blob([plain], { type: 'text/plain' }),
           'text/html': new Blob([html], { type: 'text/html' })
