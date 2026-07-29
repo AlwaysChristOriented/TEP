@@ -26,6 +26,35 @@ const TOP_CAP = 30;
 
 let bibleFuse = null;
 
+// Fallback for queries where matching the whole string as one fuzzy pattern
+// finds nothing (see buildBroadQuery in app.js) — e.g. a conversational
+// question, or a curated topic-synonym expansion like "sodomite effeminate
+// abomination" for a query of "homosexuality". Searches each word/phrase in
+// `words` independently and merges hits by item, since Fuse has no built-in
+// concept of "OR of N independent fuzzy patterns, ranked by how many hit."
+// A small per-extra-match score bonus means a row containing several of the
+// words ranks above one that only contains a single, weakly-matching word.
+function orSearch(fuseIndex, words) {
+  const bestByItem = new Map();
+  words.forEach((word) => {
+    fuseIndex.search(word).forEach((hit) => {
+      const existing = bestByItem.get(hit.item);
+      if (!existing) {
+        bestByItem.set(hit.item, { item: hit.item, score: hit.score, matchCount: 1 });
+      } else {
+        existing.score = Math.min(existing.score, hit.score);
+        existing.matchCount += 1;
+      }
+    });
+  });
+  const merged = [...bestByItem.values()].map((r) => ({
+    item: r.item,
+    score: Math.max(0, r.score - (r.matchCount - 1) * 0.05)
+  }));
+  merged.sort((a, b) => a.score - b.score);
+  return merged;
+}
+
 // One Fuse index per source id (not one combined index across all source
 // texts) so a tradition-filtered search only pays the cost of the
 // collections it actually needs — e.g. filtering to Hinduism searches only
@@ -56,7 +85,8 @@ self.onmessage = (e) => {
 
   if (msg.type === 'search') {
     const t0 = performance.now();
-    const bible = bibleFuse ? bibleFuse.search(msg.query) : [];
+    const orWords = msg.orWords && msg.orWords.length ? msg.orWords : null;
+    const bible = bibleFuse ? (orWords ? orSearch(bibleFuse, orWords) : bibleFuse.search(msg.query)) : [];
     const tBible = performance.now();
 
     const idsToSearch = msg.sourceIdWhitelist || Object.keys(sourceIndices);
@@ -66,7 +96,7 @@ self.onmessage = (e) => {
       const idx = sourceIndices[id];
       if (!idx) return;
       const tStart = performance.now();
-      source = source.concat(idx.search(msg.query));
+      source = source.concat(orWords ? orSearch(idx, orWords) : idx.search(msg.query));
       perSourceMs[id] = +(performance.now() - tStart).toFixed(1);
     });
     source.sort((a, b) => (a.score ?? 0) - (b.score ?? 0));

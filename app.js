@@ -1619,8 +1619,11 @@
 
   const STOPWORDS = new Set(["the","and","are","was","were","that","this","with","from","have","has","had",
     "for","you","your","they","them","into","than","then","who","what","when","where","why","how","does",
-    "did","can","could","would","should","just","only","also","very","more","most","which","there","here",
-    "about","its","it's","isn't","isnt","doesn't","doesnt","dont","don't","not","did","really"]);
+    "did","can","cant","can't","could","would","should","just","only","also","very","more","most","which","there","here",
+    "about","its","it's","isn't","isnt","doesn't","doesnt","dont","don't","not","did","really",
+    "wont","won't","arent","aren't","wasnt","wasn't","werent","weren't","hasnt","hasn't","hadnt","hadn't",
+    "wouldnt","wouldn't","couldnt","couldn't","shouldnt","shouldn't","didnt","lets","let's",
+    "im","i'm","youre","you're","theyre","they're","thats","that's","whats","what's","people"]);
 
   function normalizeText(str) {
     return str.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -1628,6 +1631,78 @@
 
   function tokenize(str) {
     return normalizeText(str).split(' ').filter(w => w.length > 2 && !STOPWORDS.has(w));
+  }
+
+  // Bridges everyday search terms to the vocabulary the KJV (1611) actually
+  // uses, for topics where the two have essentially no words in common —
+  // fuzzy string matching alone can never connect "homosexuality" to
+  // "abomination"/"sodomite" no matter how loose the threshold, since they
+  // share no letters in common. Each entry's `terms` are checked as a
+  // substring of the normalized query; a hit adds that topic's `expand`
+  // strings into the broad/fallback search (see buildBroadQuery below) so
+  // the actual relevant verses can surface. Curated and intentionally small
+  // — add topics here as they come up rather than trying to cover
+  // everything up front.
+  const TOPIC_SYNONYMS = [
+    {
+      terms: ["homosexual", "homosexuality", "homosexuals", "gay", "gays", "lesbian", "lesbians", "lgbt", "lgbtq", "same sex", "samesex"],
+      expand: ["sodomite", "effeminate", "abomination", "vile affections"]
+    },
+    {
+      terms: ["abortion", "abortions", "aborting", "pro choice", "prochoice"],
+      expand: ["womb"]
+    },
+    {
+      terms: ["suicide", "suicidal", "kill myself", "end my life", "want to die"],
+      expand: ["brokenhearted", "heavy laden", "comfort", "cast down"]
+    },
+    {
+      terms: ["porn", "porno", "pornography", "pornographic"],
+      expand: ["lust", "concupiscence"]
+    },
+    {
+      terms: ["alcoholic", "alcoholics", "alcoholism"],
+      expand: ["drunkard", "drunkenness", "strong drink"]
+    },
+    {
+      terms: ["racism", "racist", "racists", "racial discrimination"],
+      expand: ["one blood", "respecter of persons", "neither jew nor greek"]
+    },
+    {
+      terms: ["gambling", "gamble", "gambler", "betting", "casino"],
+      expand: ["love of money", "hasteth to be rich"]
+    },
+    {
+      terms: ["depression", "depressed", "anxiety", "anxious", "panic attack", "mental health"],
+      expand: ["careful for nothing", "take no thought", "casting all your care"]
+    }
+  ];
+
+  function topicSynonymExpansion(rawQuery) {
+    const qNorm = normalizeText(rawQuery);
+    const words = new Set();
+    TOPIC_SYNONYMS.forEach(topic => {
+      if (topic.terms.some(term => qNorm.includes(normalizeText(term)))) {
+        topic.expand.forEach(w => words.add(w));
+      }
+    });
+    return [...words];
+  }
+
+  // Last-resort fallback for queries that find nothing as either a literal
+  // phrase or a spell-corrected phrase — e.g. a full conversational question
+  // ("why can't people love each other?"), where the whole raw string will
+  // never fuzzy-match any single short verse well, even though a word inside
+  // it ("love") is all over the Bible on its own. Reduces the query to its
+  // content words (stopwords stripped) plus any curated topic-synonym words,
+  // for a per-word OR search (see orSearch in search-worker.js) instead of a
+  // whole-phrase fuzzy match.
+  function buildBroadQuery(rawQuery) {
+    const contentWords = tokenize(rawQuery);
+    const topicWords = topicSynonymExpansion(rawQuery);
+    const words = [...new Set([...topicWords, ...contentWords])];
+    if (words.length === 0) return null;
+    return { words, query: words.join(' ') };
   }
 
   /* ===== Typo-tolerant word correction ===== */
@@ -1818,7 +1893,7 @@
   // just overwrites whatever was queued, so only the latest ever waits, and
   // it fires the instant the current search returns.
   let searchInFlight = false;
-  let queuedSearch = null; // { rawQuery, query, phase } — most recent request received while one was in flight
+  let queuedSearch = null; // { rawQuery, query, phase, orWords } — most recent request received while one was in flight
   let searchDispatchedAt = 0;
 
   // Accumulates one reqId's replies from every pool worker before the search
@@ -1826,7 +1901,11 @@
   // (searchInFlight/queuedSearch above), so a single pending record suffices.
   let poolPending = null;
 
-  function dispatchSearch(rawQuery, query, phase) {
+  // orWords: set only for the 'broad' fallback phase (see buildBroadQuery) —
+  // tells the worker to OR-match each word individually instead of fuzzy-
+  // matching the whole query string as one pattern. Absent/null for every
+  // other phase, which keeps their existing whole-string matching behavior.
+  function dispatchSearch(rawQuery, query, phase, orWords) {
     const reqId = ++searchReqSeq;
     latestSearchReqId = reqId;
     searchInFlight = true;
@@ -1842,16 +1921,16 @@
       perSourceMs: {}
     };
     const sourceIdWhitelist = currentSourceIdWhitelist();
-    searchWorkers.forEach(w => w.postMessage({ type: 'search', reqId, phase, rawQuery, query, sourceIdWhitelist }));
+    searchWorkers.forEach(w => w.postMessage({ type: 'search', reqId, phase, rawQuery, query, sourceIdWhitelist, orWords: orWords || null }));
   }
 
-  function requestSearch(rawQuery, query, phase) {
+  function requestSearch(rawQuery, query, phase, orWords) {
     if (searchInFlight) {
-      queuedSearch = { rawQuery, query, phase };
+      queuedSearch = { rawQuery, query, phase, orWords: orWords || null };
       latestSearchReqId = ++searchReqSeq; // the in-flight response, once it arrives, is now stale
       return;
     }
-    dispatchSearch(rawQuery, query, phase);
+    dispatchSearch(rawQuery, query, phase, orWords);
   }
 
   function render() {
@@ -1913,7 +1992,7 @@
     if (queuedSearch) {
       const next = queuedSearch;
       queuedSearch = null;
-      dispatchSearch(next.rawQuery, next.query, next.phase);
+      dispatchSearch(next.rawQuery, next.query, next.phase, next.orWords);
     }
 
     if (merged.reqId !== latestSearchReqId) return; // stale — a newer request has since superseded this response
@@ -1928,40 +2007,73 @@
     finishSearchResult(merged.rawQuery, merged.query, merged.phase, merged.bible, mergedSource);
   }
 
-  // Only reach for spelling correction if the literal query found nothing
-  // anywhere (no claim entries, no Bible verses) — see finalizeRender for
-  // where a successful/failed correction ends up rendered.
+  // Falls back to a per-word OR search (see buildBroadQuery) when neither the
+  // literal query nor its spell-corrected form found anything. Returns true
+  // if that fallback was dispatched (caller should return without rendering
+  // yet), false if there was nothing useful to try.
+  function tryBroadFallback(rawQuery) {
+    const broad = buildBroadQuery(rawQuery);
+    if (!broad) return false;
+    requestSearch(rawQuery, broad.query, 'broad', broad.words);
+    return true;
+  }
+
+  // Only reach for spelling correction / broad fallback if the literal query
+  // found nothing anywhere (no claim entries, no Bible verses) — see
+  // finalizeRender for where a successful/failed attempt ends up rendered.
   function finishSearchResult(rawQuery, query, phase, bible, source) {
     if (phase === 'original') {
       const entries = entriesFor(query);
       if (entries.length === 0 && bible.total === 0) {
+        pendingOriginalSource = source;
         const attempt = correctQuery(query);
         if (attempt.changed) {
-          pendingOriginalSource = source;
           requestSearch(rawQuery, attempt.corrected, 'correction');
           return;
         }
+        if (tryBroadFallback(rawQuery)) return;
       }
       finalizeRender(rawQuery, query, false, entries, bible, source);
       return;
     }
 
-    // phase === 'correction'
-    const entries = entriesFor(query);
-    if (entries.length > 0 || bible.total > 0) {
-      finalizeRender(rawQuery, query, true, entries, bible, source);
-    } else {
+    if (phase === 'correction') {
+      const entries = entriesFor(query);
+      if (entries.length > 0 || bible.total > 0) {
+        finalizeRender(rawQuery, query, true, entries, bible, source);
+        return;
+      }
+      if (tryBroadFallback(rawQuery)) return;
       // Correction didn't help either — fall back to the original query's
       // own source-text matches (if any), which are still valid even though
       // nothing matched among claim entries or the Bible.
       finalizeRender(rawQuery, rawQuery, false, [], EMPTY_MATCHES, pendingOriginalSource);
+      return;
+    }
+
+    // phase === 'broad'
+    const entries = entriesFor(query);
+    if (entries.length > 0 || bible.total > 0) {
+      // Show the user's own words as the label, not the internal OR-word
+      // list used to actually drive the match.
+      finalizeRender(rawQuery, query, true, entries, bible, source, rawQuery);
+    } else {
+      finalizeRender(rawQuery, rawQuery, false, [], EMPTY_MATCHES, pendingOriginalSource);
     }
   }
 
-  function finalizeRender(rawQuery, query, corrected, allMatchedEntries, bibleResult, sourceResult) {
+  // displayLabel: overrides what's shown in the "N matches for X" text —
+  // used only by the broad-fallback phase, where `query` itself is an
+  // internal OR-word list (e.g. "homosexuality sodomite effeminate
+  // abomination") that's fine for matching/highlighting but would be
+  // confusing to show the user verbatim. Every other phase leaves this
+  // unset and just shows `query` as before.
+  function finalizeRender(rawQuery, query, corrected, allMatchedEntries, bibleResult, sourceResult, displayLabel) {
     renderTopicOverview(query, allMatchedEntries, bibleResult.top);
     renderBibleResults(query, bibleResult);
     renderSourceResults(query, sourceResult);
+
+    const label = displayLabel || query;
 
     let matches = ENTRIES
       .map(e => ({ entry: e, s: score(e, query) }))
@@ -1971,7 +2083,7 @@
       .map(m => m.entry);
 
     const correctionNote = corrected
-      ? `<span class="correction-note">Showing results for "${escapeHtml(query)}"</span>`
+      ? `<span class="correction-note">Showing results for "${escapeHtml(label)}"</span>`
       : '';
 
     if (matches.length === 0) {
@@ -1985,7 +2097,7 @@
     }
     emptyEl.style.display = 'none';
     metaEl.innerHTML = rawQuery
-      ? `${matches.length} match${matches.length === 1 ? '' : 'es'} for "${escapeHtml(query)}" ${correctionNote}`
+      ? `${matches.length} match${matches.length === 1 ? '' : 'es'} for "${escapeHtml(label)}" ${correctionNote}`
       : `${matches.length} entries`;
 
     // A fresh search/filter always starts back on page 1, even if a stale
